@@ -1,0 +1,17 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+
+\title{Note: Machine Learning Introduction}
+\author{Sun Zhao}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Definition of Machine Learning}
+I've heard of lots of famous machine learning algorithm like SVM, collaborate recommending, LSH and applications like google machine translation. Those algorithms and applications
+\section{Performance}
+
+\end{document}
