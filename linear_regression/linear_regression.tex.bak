@@ -1,0 +1,31 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{amsmath}
+\title{Note: Linear Regression Model}
+\author{Sun Zhao}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Model Representation}
+Remind that regression algorithms are tying to infer a function predicting continuous values when given training samples. Let's first focus on the notation of the training samples. Regarding to Table1, training samples are represented by a vector of \textbf{x} and a vector of \textbf{y} with identical length of m and each sample becomes a pair of ($x^{(i)}$, $y^{(i)}$). The inferred function h(which means hypothesis) is shown as below:\\
+
+\begin{equation}\label{hypothesis_function}
+  h_\Theta(x)=\Theta_0 + \Theta_1x
+\end{equation}
+For simplicity, formula(1) consists of only one variable, thus we call this linear regression as univariate linear regression.
+
+\section{Cost Function}
+$\Theta_0$ and $\Theta1$ are the two arguments of hypothesis function, so the idea here is to choose optimal values of $\Theta_0$ and $\Theta_1$. Intuitively, the optimal h should minimize average the error distance between the predict values of each $x^(i)$ and $y^(i)$. Then we can define the cost function as below:
+\begin{equation}\label{cost_function}
+J(\Theta_0, \Theta_1) = \frac{1}{2m} \sum_{1}^{m} (h_\Theta({x^{(i)}})-y^{(i)})^2
+\end{equation}
+Obviously, the object function is defined as:
+\begin{equation}\label{object_function}
+\underset{\Theta_0, \Theta_1}{minimize} \frac{1}{2m} \sum_{1}^{m} (h_\Theta({x^{(i)}})-y^{(i)})^2
+\end{equation}
+
+\end{document}
