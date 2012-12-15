@@ -21,7 +21,7 @@ For simplicity, formula(1) consists of only one variable, thus we call this line
 \section{Cost Function}
 $\Theta_0$ and $\Theta_1$ are the two arguments of hypothesis function, so the idea here is to choose optimal values of $\Theta_0$ and $\Theta_1$. Intuitively, the optimal h should minimize average the error distance between the predict values of each $x^(i)$ and $y^(i)$. Then we can define the cost function as below:
 \begin{equation}\label{cost_function}
-J(\Theta_0, \Theta_1) = \frac{1}{2m} \sum_{1}^{m} (h_\Theta({x^{(i)}})-y^{(i)})^2
+J(\Theta_0, \Theta_1) = \frac{1}{2m} \sum_{i=1}^{m} (h_\Theta({x^{(i)}})-y^{(i)})^2
 \end{equation}
 Obviously, the object function is defined as:
 \begin{equation}\label{object_function}
@@ -33,6 +33,30 @@ J(0.5)=\frac{1}{2 \times 3}[(0.5-1)^2 + (1-2)^2 + (1.5-3)^2]=\frac {3.5}{6}
 \end{equation}
 
 \section{Gradient Descent}
-Now we turn to the calculation methods of the objection function. Suppose we have a training set as shown in Figure3. We can enumerate all the possible values of $\Theta_0$ and $\Theta_1$ and calculate the corresponding cost $J(\Theta_0, \Theta_1$) and show them in a 3D space like Figure2. In Figure2, if we start from a random pointer$(\Theta_0, \Theta_1, J(\Theta_0, \Theta_1))$, we can iteratively migrate a small step through the negative direction of the gradient direction of this point and hopefully, we will converge to the lowest point of the surface.\\
+Now we turn to the calculation methods of the objection function. Suppose we have a training set as shown in Figure3. We can enumerate all the possible values of $\Theta_0$ and $\Theta_1$ and calculate the corresponding cost $J(\Theta_0, \Theta_1$) and show them in a 3D space like Figure2. In Figure2, if we start from a random pointer$(\Theta_0, \Theta_1, J(\Theta_0, \Theta_1))$, we can iteratively migrate a small step through the negative direction of the gradient direction of this point and hopefully, we will converge to the lowest point of the surface.
+\newline Formally, we describe gradient descent algorithm as following:\\
+Algorithm1:\\
+$\Theta_0 = 0;$\\
+$\Theta_1 = 0;$\\
+repeat until convergence\{\\
+$\Theta_j = \Theta_j - \alpha\frac{\partial}{\partial \theta_j}J(\theta_0, \theta_1) for(j = 0 and j = 1)$\\
+\}\\
+Issue1: $\alpha$ is called the learning rate. It is a pre-choose value, and if it is too small, the convergence process will be much slow, and otherwise it is too large, it can not converge and possibly diverge. As the algorithm approach a local minimum, gradient descent will automatically take smaller steps. So, no need to decrease $\alpha$ over time.\\
+Issue2: The update process should be a simultaneous update which should be performed as:\\
+$temp0=\Theta_0 - \alpha\frac{\partial}{\partial \theta_0}J(\theta_0, \theta_1)$\\
+$temp1=\Theta_1 - \alpha\frac{\partial}{\partial \theta_1}J(\theta_0, \theta_1)$\\
+$\theta_0 = temp0$\\
+$\theta_1 = temp1$\\
+If we do not take a simultaneous update, the output of gradient descent algorithm is not defined.\\
+Issue3: Gradient Descent algorithm starts from a random point, so the output is a local optima instead of global optima. However, if the object function is a convex function, it is guaranteed that gradient descent algorithm will reach the global optima.\\
+Get back to the linear regression problem, we use gradient descent to solve the problem of formula(3). If we apply formula(1) to algorithm1 and calculate the differential result, we will get:\\
+repeat until convergence \{\\
+$\theta_0=\theta_0 - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})$\\
+$\theta_1=\theta_1 - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)}) \cdot x^{(i)}$\\
+\}\\
+Note that we use all the samples to update the arguments in each step, so we called it "batch" gradient descent. Until now, linear regression problem is successfully solved by "batch" gradient descent.
 
+\section{Summary}
+Univariate linear regression model is represented as formula(1), and its cost function and objection function are shown as formula(2) and formula(3) separately. Apply object function with gradient descent algorithm will solve linear regression problem.
+ 
 \end{document}
