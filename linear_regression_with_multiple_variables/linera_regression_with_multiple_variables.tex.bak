@@ -1,0 +1,18 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+
+\title{Note: Linear Regression with Multiple Variables}
+\author{Sun Zhao}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Multiple Features}
+Univariate linear regression takes only one variable to predict values. Mostly, values are relevant to multiple features other than one feature. Multiple features are powerful than single
+ feature to predict values.
+\section{Performance}
+
+\end{document}

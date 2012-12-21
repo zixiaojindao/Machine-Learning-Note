@@ -1,0 +1,48 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+
+\title{Note: Linear Regression with Multiple Variables}
+\author{Sun Zhao}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Multiple Features}
+Univariate linear regression takes only one variable to predict values. Mostly, values are relevant to multiple features other than one feature. Multiple features are powerful than single
+ feature to predict values. An example of multiple features are shown in Table1. A house's price is now related to the size, number of bedrooms, number of floors, and age of it. Each row is an training example with left three feature columns and right one value column. We use n to denote the number of features, $x^{(i)}$ to denote the features of the $i^{th}$ training example and $x^{(i)}_{j}$ to denote the value of feature j in $i^{th}$ training example. For example, $x^{(2)}$ equals $[1416 \quad 3 \quad 2 \quad 40]^{T}$ and $x^{(2)}_{3}$ equals 2. Since the hypothesis of univariate linear regression is $h_{\theta}(x) = \theta_{0} + \theta_{1}x$, that of multivariate linear regression becomes formula1.
+ \begin{equation}\label{hypothesis}
+   h_{\theta}(x) = \theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} + \ldots + \theta_{n}x_{n}
+ \end{equation}
+ Let $x^{(i)}_{0}$ = 1, $\theta = [\theta_{0} \quad \theta_{1} \ldots \theta_{n}]^{T}$, and $x = [x_{0} \quad x_{1} \quad \ldots x_{n}]^{T}$, then formula1 is refined as formula2.
+ \begin{equation}\label{hypotheis_refine}
+ h_{\theta}(x) = {\theta}^{T}x
+ \end{equation}
+\section{Gradient Descent}
+Refer to formula1 we can infer the cost function of multivariate linear regression shown in formula3.
+\begin{equation}\label{cost_function}
+  J(\theta_{0}, \theta_{1}, \ldots , \theta_{n}) = \frac{1}{2m} \sum_{i=1}^{m} (h_\Theta({x^{(i)}})-y^{(i)})^2
+\end{equation}
+And the gradient descent algorithm is adapted to:
+\medskip
+\hrule
+\smallskip
+Algorithm1: Gradient for Multivariate Linear Regression
+\smallskip
+\hrule
+\smallskip
+Repeat\{\\
+$\theta_j=\theta_1 - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)}) \cdot x^{(i)}_{j}$\\
+\}\\
+\hrule
+
+\section{Practical Issues}
+\subsection{Feature Scaling}
+The idea of feature scaling is to make sure that all features are on similar scale. If one feature's range is significantly dominating the others', the regression process will converge at a very slow speed. Generally, make the scale of all features is around [-1, 1] is a good choice. Methods for normalization includes dividing values by its ranges or first decreasing by its mean values and then dividing by its range. In a word, we can normalize x form [min, max] with x/(max-min) or (x-average([min, max]))/(max-min).
+\subsection{Learning Rate}
+The core function of gradient descent is $\theta_j =\theta_j - \alpha\frac{\partial}{\partial \theta_j}J(\theta)$. When running gradient descent algorithm, we need to choose an appropriate $\alpha$ and make sure the algorithm is working correctly. Teacher recommended to plot the value of $J(\theta)$ against the number of regression iterations. If the plotted curve decreases faster as Figure1(A), then we can confirm $\alpha$ and the algorithm all works well. If the plotted curve decreases slow as Figure1(A), we need to increase the value of $\alpha$ a little more. Otherwise, the plotted curve increase as Figure1(C) or vibrates as Figure1(D), we have to decrease the value of $\alpha$.
+\subsection{Choosing Features}
+
+\end{document}
