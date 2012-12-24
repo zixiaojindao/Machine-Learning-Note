@@ -1,0 +1,17 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+
+\title{Note: Logistic Regression}
+\author{Sun Zhao}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Classification}
+
+\section{Performance}
+
+\end{document}
