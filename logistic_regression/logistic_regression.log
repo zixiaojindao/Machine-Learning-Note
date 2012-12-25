@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  24 DEC 2012 20:50
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  25 DEC 2012 21:08
 entering extended mode
 **D:/course/note/logistic_regression/logistic_regression.tex
 (D:/course/note/logistic_regression/logistic_regression.tex
@@ -107,30 +107,43 @@ Package pdftex.def Info: Figure1.jpg used on input line 19.
 <Figure2.jpg, id=18, 379.4175pt x 229.60782pt>
 File: Figure2.jpg Graphic file (type jpg)
  <use Figure2.jpg>
-Package pdftex.def Info: Figure2.jpg used on input line 43.
+Package pdftex.def Info: Figure2.jpg used on input line 44.
 (pdftex.def)             Requested size: 227.62204pt x 137.74823pt.
- [3 <D:/course/note/logistic_regression/Figure2.jpg>]
+
+<Figure3.jpg, id=19, 586.44093pt x 201.00093pt>
+File: Figure3.jpg Graphic file (type jpg)
+ <use Figure3.jpg>
+Package pdftex.def Info: Figure3.jpg used on input line 54.
+(pdftex.def)             Requested size: 227.62204pt x 78.01585pt.
+ [3 <D:/course/note/logistic_regression/Figure2.jpg> <D:/course/note/logistic_r
+egression/Figure3.jpg>] <Figure4.jpg, id=24, 299.61937pt x 207.77625pt>
+File: Figure4.jpg Graphic file (type jpg)
+ <use Figure4.jpg>
+Package pdftex.def Info: Figure4.jpg used on input line 74.
+(pdftex.def)             Requested size: 142.26378pt x 98.6567pt.
+
+[4 <D:/course/note/logistic_regression/Figure4.jpg>]
 (D:\course\note\logistic_regression\logistic_regression.aux) ) 
 Here is how much of TeX's memory you used:
- 1151 strings out of 495354
- 14977 string characters out of 3183858
- 65913 words of memory out of 3000000
- 4355 multiletter control sequences out of 15000+200000
+ 1166 strings out of 495354
+ 15295 string characters out of 3183858
+ 65953 words of memory out of 3000000
+ 4368 multiletter control sequences out of 15000+200000
  7280 words of font info for 26 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,6n,19p,1423b,216s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,19p,1423b,214s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/CTEX/MiKTeX/f
 onts/type1/public/amsfonts/cm/cmbx12.pfb><d:/CTEX/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d
-:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/CTEX/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr12.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><d:/CTEX/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/CTEX/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pf
-b>
-Output written on logistic_regression.pdf (3 pages, 156607 bytes).
+fonts/cm/cmex10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><d:/CTEX/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/CTEX/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><d:/CTEX/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on logistic_regression.pdf (4 pages, 218176 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
+ 63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
