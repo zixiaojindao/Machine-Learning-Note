@@ -37,12 +37,56 @@ h_{\theta}(x) = P(y = 1|x;\theta)
 \begin{equation}\label{probalility_property}
 P(y = 0|x;\theta) + P(y = 1|x;\theta) = 1
 \end{equation}
+
 \begin{figure}[ht]
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=8cm]{Figure2.jpg}\\
   \caption{}\label{sigmoid_function_plotting}
 \end{figure}
+
 \section{Decision Boundary}
+Because we judge a sample x whether is positive class by checking whether its hypothesis value $h_{\theta}(x)$ equal to or greater than 0.5, and note Sigmoid(0) = 0.5, we can use the condition that whether $\theta^{T}x$ is equal to or greater than 0 to decide its class. If we plot the examples and hypothesis function when given $\theta$, we will find that $\theta^{T}x$ = 0 defines the decision boundary between two classes. Figure\ref{decision_boundary} shows two decision boundaries. In Figure\ref{decision_boundary}A, all positive examples are from the up-right direction of the decision line, and in Figure\ref{decision_boundary}B, they are all from the outside direction of the decision circle.
+
+\begin{figure}[ht]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{Figure3.jpg}\\
+  \caption{}\label{decision_boundary}
+\end{figure}
+
+\section{Cost Function}
+Now we have the logistic regression hypothesis shown in formula\ref{logistic_regression_hypothesis}, if we use square error cost function as linear regression, the cost function is much complicated and non-convex, hence the gradient descent algorithm may not converge with a global optima. To ensure a convex cost function, we define the cost between $h_{\theta}(x)$ and y as $Cost(h_{\theta}(x), y)$ shown in formula\ref{logistic_regression_example_cost_function}.
+
+\begin{equation}\label{logistic_regression_example_cost_function}
+Cost(h_{\theta}(x), y) = \left\{ \begin{array}{ll}
+-log(h_{\theta}(x)) & \textrm{if y = 1}\\
+-log(1 - h_{\theta}(x)) & \textrm{if y = 0}\\
+\end{array} \right.
+\end{equation}
+The intuition behind the cost function is that if $h_{\theta}(x) = 0$, but y = 1 or $h_{\theta}(x) = 1$, but y = 0, we'll penalize learning algorithm by a very large cost, and if $h_{\theta}(x)$ = y, the cost is zero. Figure\ref{cost_fuction_log_plot} shows $-log(h_{\theta}(x))$ against $h_{\theta}(x)$ (when y = 1, the cost function will be $-log(h_{\theta}(x)$), and it is clear that the cost decreases as $h_{\theta}(x)$ goes 1.
+\\
+Since y only equal 1 or 0, we can refine $Cost(h_{\theta}(x), y)$ in a simple form shown in (\ref{simple_logistic_regression_example_cost_function}).
+
+\begin{figure}[ht]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=5cm]{Figure4.jpg}\\
+  \caption{}\label{cost_fuction_log_plot}
+\end{figure}
+
+\begin{equation}\label{simple_logistic_regression_example_cost_function}
+Cost(h_{\theta}(x), y) = -ylog(h_{\theta}(x)) - (1 - y)log(1 - h_{\theta}(x))
+\end{equation}
+\\
+Thus, the cost function of logistic regression becomes (\ref{logistic_regression_cost_function}).
+\begin{eqnarray}\label{logistic_regression_cost_function}
+% \nonumber to remove numbering (before each equation)
+  J(\theta) &   =   &\frac{1}{m} \sum_{i=1}^{m} Cost(h_{\theta}(x^{(i)}), y^{(i)})\\
+            &   =   &-\frac{1}{m} \sum_{i=1}^{m} y^{(i)}log(h_{\theta}(x^{(i)})) + (1 - y^{(i)})log(1 - h_{\theta}(x^{(i)}))
+\end{eqnarray}
+
+\section{Gradient Descent}
+
 
 \end{document}

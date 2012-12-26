@@ -21,7 +21,7 @@ In classification problem, we will predict the label for the given data instead 
 \end{figure}
 
 \section{Hypothesis Representation}
-How to control the output of our hypothesis between 0 and 1? The answer is using a sigmoid function shown in formula\ref{sigmoid_function}. The sigmoid function plotted in Figure\ref{sigmoid_function_plotting} maps an interval of (-$\infty, \infty$) to (0, 1). Combining the sigmoid function and hypothesis function $h_{\theta}(x) = \theta^{T}x$, we will get the hypothesis function of logistic regression shown in formula\ref{logistic_regression_hypothesis}. The output of the new hypothesis $h_{\theta}(x)$  means the probability that y = 1 on input of x. For example, in the tumor classification problem, if $h_{\theta}(x_{0}) = 0.7$, then we can tell the patient whose tumor size is equal to $x_{0}$ that there are 70\% chance that her/his tumor to be malignant. Formally, the hypothesis predicts the probability of x being positive class given x and $\theta$. This definition is described in formula\ref{hypothesis_probability_definition}, and obviously, we can induce a property shown in formula\ref{probalility_property}.
+How to control the output of our hypothesis between 0 and 1? The answer is using a sigmoid function shown in (\ref{sigmoid_function}). The sigmoid function plotted in Figure\ref{sigmoid_function_plotting} maps an interval of (-$\infty, \infty$) to (0, 1). Combining the sigmoid function and hypothesis function $h_{\theta}(x) = \theta^{T}x$, we will get the hypothesis function of logistic regression shown in (\ref{logistic_regression_hypothesis}). The output of the new hypothesis $h_{\theta}(x)$  means the probability that y = 1 on input of x. For example, in the tumor classification problem, if $h_{\theta}(x_{0}) = 0.7$, then we can tell the patient whose tumor size is equal to $x_{0}$ that there are 70\% chance that her/his tumor to be malignant. Formally, the hypothesis predicts the probability of x being positive class given x and $\theta$. This definition is described in (\ref{hypothesis_probability_definition}), and obviously, we can induce a property shown in (\ref{probalility_property}).
 \begin{equation}\label{sigmoid_function}
 Sigmoid(x) = \frac{1}{1 + e^{-x}}
 \end{equation}
@@ -56,7 +56,7 @@ Because we judge a sample x whether is positive class by checking whether its hy
 \end{figure}
 
 \section{Cost Function}
-Now we have the logistic regression hypothesis shown in formula\ref{logistic_regression_hypothesis}, if we use square error cost function as linear regression, the cost function is much complicated and non-convex, hence the gradient descent algorithm may not converge with a global optima. To ensure a convex cost function, we define the cost between $h_{\theta}(x)$ and y as $Cost(h_{\theta}(x), y)$ shown in formula\ref{logistic_regression_example_cost_function}.
+Now we have the logistic regression hypothesis shown in (\ref{logistic_regression_hypothesis}), if we use square error cost function as linear regression, the cost function is much complicated and non-convex, hence the gradient descent algorithm may not converge with a global optima. To ensure a convex cost function, we define the cost between $h_{\theta}(x)$ and y as $Cost(h_{\theta}(x), y)$ shown in (\ref{logistic_regression_example_cost_function}).
 
 \begin{equation}\label{logistic_regression_example_cost_function}
 Cost(h_{\theta}(x), y) = \left\{ \begin{array}{ll}
@@ -79,12 +79,36 @@ Since y only equal 1 or 0, we can refine $Cost(h_{\theta}(x), y)$ in a simple fo
 Cost(h_{\theta}(x), y) = -ylog(h_{\theta}(x)) - (1 - y)log(1 - h_{\theta}(x))
 \end{equation}
 \\
-Thus, the cost function of logistic regression becomes (\ref{logistic_regression_cost_function})
+Thus, the cost function of logistic regression becomes (\ref{logistic_regression_cost_function}).
 \begin{eqnarray}\label{logistic_regression_cost_function}
 % \nonumber to remove numbering (before each equation)
   J(\theta) &   =   &\frac{1}{m} \sum_{i=1}^{m} Cost(h_{\theta}(x^{(i)}), y^{(i)})\\
-            &   =   &-\frac{1}{m} \sum_{i=1}^{m} y^{(i)}log(h_{\theta}(x^{(i)})) + (1 - y^{(i)})log(1 - h_{\theta}(x^{(i)})) 
+            &   =   &-\frac{1}{m} \sum_{i=1}^{m} y^{(i)}log(h_{\theta}(x^{(i)})) + (1 - y^{(i)})log(1 - h_{\theta}(x^{(i)}))
 \end{eqnarray}
 
+\section{Gradient Descent}
+According to cost function shown in (\ref{logistic_regression_cost_function}) and gradient descent idea, we get the gradient descent algorithm for logistic regression. Algorithm1 shows the update iteration, and it is cool that the update function looks identical with linear regression! The only difference is the hypothesis function.
+\smallskip
+\hrule
+\smallskip
+Algorithm1: Gradient Descent for Logistic Regression
+\smallskip
+\hrule
+\smallskip
+Repeat\{\\
+$\theta_j=\theta_j - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)}) \cdot x^{(i)}_{j}$\\
+\}\\
+\hrule
 
+\section{Multiple Class Classification}
+Contrasting with binary classification, multiple class classification predicts more than two classes. Here are a list of examples:
+\begin{itemize}
+\item Email tagging: Work, Friends, Family.
+\item Medical diagrams: Not ill, Cold, Flu.
+\item Weather: Sunny, Cloudy, Rain, Snow.
+\end{itemize}
+The idea of One-vs-All is to train a binary logistic regression classifier $h_{\theta}^{(c)}(x)$ for each class c(treat examples belonging to c as positive class and examples not belonging to class c as negative class) to predict the probability that x is a member of class c. On a new input of x, its class is predicted as c that maximize $h_{\theta}^{(c)}(x)$.
+
+\section{Summary}
+Logistic regression solves the classification problem. When using a sigmoid like hypothesis and logarithms cost function, the update iteration is identical to linear regression except the hypothesis. Multiple binary classifiers are trained for each class when solving multiple class classification problem.
 \end{document}
