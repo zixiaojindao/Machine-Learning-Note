@@ -1,0 +1,25 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+
+\title{Note: Regularization}
+\author{Sun Zhao}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Over-fitting}
+Over-fitting problem occurs when the learned hypothesis fits the training data set very well, but fails to generalize to new examples. It is mainly coursed by the trained model is excessively complex, such as having too many parameters relative to the number of observations. Fig. \ref{over-fitting_example} shows three hypothesises for the house prices predicting problem. The hypothesis shown in Fig. \ref{over-fitting_example}A is called "under-fit" which means it is quite bias from the right one. Fig. \ref{over-fitting_example}C is an example of over-fitting which has high variance. Though it predicts the prices perfectly for every examples in training data, it can not be generalized to new input.
+
+\begin{figure}[ht]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=8cm]{Figure1.jpg}\\
+  \caption{}\label{over-fitting_example}
+\end{figure}
+
+\section{Performance}
+
+\end{document}
