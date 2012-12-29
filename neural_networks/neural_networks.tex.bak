@@ -1,0 +1,17 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+
+\title{Note: Neural Networks}
+\author{Sun Zhao}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Representation}
+Brain makes human to learn and gain knowledge. So, what's the structure inside brain and how does brain learn? The answer is neural networks. In biology, neural networks inside our brains consist of billions of neurons, each of which can produce and transfer biological information to others and receive from others too. In machine learning field, neural networks are algorithms that mimic our brain's neural networks.
+\section{Performance}
+
+\end{document}
