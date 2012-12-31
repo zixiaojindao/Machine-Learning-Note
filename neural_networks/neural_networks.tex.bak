@@ -51,7 +51,7 @@ Let's see an classification problem shown in Fig. \ref{XOR_classification_proble
   \caption{Neuron Model}\label{XOR_neural_networks}
 \end{figure}
 \section{Cost Function}
-Generally, neural networks outputs k hypothesis when solving a k classes classification problem. Using notations shown in Tab. \ref{neural_networks_cost_function_notation} and regularized logistic regression cost function, we can define the neural networks' cost function as shown in (\ref{}).
+Generally, neural networks outputs k hypothesis when solving a k classes classification problem. Using notations shown in Tab. \ref{neural_networks_cost_function_notation} and regularized logistic regression cost function, the neural networks' cost function is defined as (\ref{}).
 \begin{table}[hb]
 \begin{center}
 \caption{}\label{neural_networks_cost_function_notation}
@@ -70,8 +70,33 @@ $(h_{\theta}(x))_{i}$ & $i_{th}$ output hypothesis\\
 \begin{equation}\label{neural_networks_cost_function}
 J(\theta) = -\frac{1}{m}\biggl[\sum_{i=1}^{m}\sum_{k=1}^{K} y_{k}^{(i)}log(h_{\theta}(x^{(i)}))_{k} + (1 - y_{k}^{(i)})log(1 - (h_{\theta}(x^{(i)}))_{k})\biggr] + \frac{\lambda}{2m}\sum_{l=1}^{L-1}\sum_{i=1}^{s_{l}}\sum_{j=1}^{s_{l+1}}(\theta_{ji}^{(l)})^{2}
 \end{equation}
-The index of i starts from 1 instead of 0 is because the bias is always ignored to regularize. When running gradient descent algorithm, we need compute the partial derivative terms of $\frac{\partial}{\partial \theta_{ij}{(l)}}$ for all i, j, and l.
+The index of i starts from 1 instead of 0 is because the bias is always ignored to regularize. 
 
-\section{Back Propagation}
-According to gradient descent algorithm, we need to compute $J(\theta)$ and 
+\section{Forward and Backward Propagation}
+When implementing gradient descent algorithm, we need compute $J(\theta)$ and the partial derivative terms of $\frac{\partial}{\partial \theta_{ij}{(l)}}$ for all i, j, and l. Forward and backward propagation are used to calculate the two terms. Fig. \ref{four_layer_neural_networks} shows a four-layer neural networks. Starting from the first layer and calculate output as input of previous layer iteratively, the final hypothesis will be the last output. Concretely, we can use following procedure to compute the hypothesis for Fig. \ref{four_layer_neural_networks}'s neural networks.
+
+\begin{table}[hb]
+\begin{center}
+\begin{tabular}{rcl}
+$a^{(1)}$ &= &x\\
+$z^{(2)}$ &= &$\theta^{(1)}a^{(1)}$\\
+$a^{(2)}$ &= &$g(z^{(2)})$(add $a_{0}^{(2)}$)\\
+$z^({3)}$ &= &$\theta^{(2)}a^{(2)}$\\
+$a^{(3)}$ &= &$g(z^{(3)})$(add $a_{0}^{(3)}$)\\
+$z^{(4)}$ &= &$\theta^{(3)}a^{(3)}$\\
+$a^{(4)}$ &= &$h_{\theta}(x)=g(z^{(4)})$\\
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{figure}[ht]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=5cm]{Figure7.jpg}\\
+  \caption{Neuron Model}\label{four_layer_neural_networks}
+\end{figure}
+To calculate the derivative terms, we introduce a new notation of $\delta_{j}^{(l)}$ to represent the error of node i on layer j. For the output unit, it is obvious that $\delta_{j}^{(L)} = a_{j}^{(L)} - y_{j}^{(L)}$, and for layers which is prior to L, (\ref{delta_backward_propagation}) is used to iteratively calculate its value. The term $g'(z^{(l)})$ in \ref{delta_backward_propagation}can be extend to $a^{(l)}.*(1-a^{(l)})$.
+\begin{equation}\label{delta_backward_propagation}
+\delta^{(l)} = (\theta^{(l)})^{T}\delta^{(l+1)}.*g'(z^{(l)})
+\end{equation}
 \end{document}
