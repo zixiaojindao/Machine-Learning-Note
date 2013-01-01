@@ -18,7 +18,7 @@
   \includegraphics[width=5cm]{Figure1.jpg}\\
   \caption{}\label{hyper-plane-example1}
 \end{figure}
- Recall that in logistic regression, we use $\Theta^{T}x = 0$ as the hyper-plane, and predict positive class if $\Theta^{T}x \ge 0$, otherwise, negative class. SVM is trying to keeps a minimum margin between the two classes and wants $\Theta^{T}x \ge 1$ if x is positive and $\Theta^{T}x < -1$ if x is negative. Let $H_{1}$ denotes $\Theta^{T}x = 1$, $H_{0}$ denotes $\Theta^{T}x = -1$ and $H_{0}$ denotes $\Theta^{T}x = 0$. The margin distance between $H_{1}$ and $H_{-1}$ is $\frac{2}{||\Theta_{1 \ldots n}||}$ where $||\Theta_{1 \ldots n}||$ equals $\sqrt{\sum_{i = 1}^{n} \Theta_{i}^{2}}$. The location relationships between training examples and $H_{1}, H_{0}, H_{-1}$ is shown in Fig. \ref{hyper-plane-example2}. The optimization problem can be summarized as follow:\\
+ Recall that in logistic regression, we use $\Theta^{T}x = 0$ as the hyper-plane, and predict positive class if $\Theta^{T}x \ge 0$, otherwise, negative class. SVM is trying to keeps a minimum margin between the two classes and wants $\Theta^{T}x \ge 1$ if x is positive and $\Theta^{T}x \le -1$ if x is negative. Let $H_{1}$ denotes $\Theta^{T}x = 1$, $H_{0}$ denotes $\Theta^{T}x = -1$ and $H_{0}$ denotes $\Theta^{T}x = 0$. The margin distance between $H_{1}$ and $H_{-1}$ is $\frac{2}{||\Theta_{1 \ldots n}||}$ where $||\Theta_{1 \ldots n}||$ equals $\sqrt{\sum_{i = 1}^{n} \Theta_{i}^{2}}$. The location relationships between training examples and $H_{1}, H_{0}, H_{-1}$ is shown in Fig. \ref{hyper-plane-example2}. The optimization problem can be summarized as follow:\\
 %Minimize $||\Theta_{1 \ldots n}||$\\
 \begin{equation}
 \min ||\Theta_{1 \ldots n}||
@@ -34,6 +34,37 @@ y^{(i)}(\Theta^{T}x^{(i)}) \ge 1
   \caption{}\label{hyper-plane-example2}
 \end{figure}
 
+\newpage
 \section{Cost Function}
-Instead of following the logarithm example cost function, SVM introduces cost function show in Fig. \ref{}. The new cost functions have following properties:
+Instead of following the logarithm example cost function, SVM introduces cost function show in Fig. \ref{example_cost_funtion_visulization}. The new cost functions have following properties:
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{l}
+if $y^{(i)}$=1, cost = 0 when $\Theta^{T}x^{(i)} \ge 1$\\
+if $y^{(i)}$=0, cost = 1 when $\Theta^{T}x^{(i)} \le -1$\\
+\end{tabular}
+\end{center}
+\end{table}
+\begin{figure}[ht]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=10cm]{Figure3.jpg}\\
+  \caption{}\label{example_cost_funtion_visulization}
+\end{figure}
+The cost function is defined as (\ref{lambada_cost_fuction}). We can move and scale the const value, thus, have a equivalent cost function shown in (\ref{C_cost_fuction}). C is called the regular factor. If C is set to be very large, the optimization algorithm will try to set $Cost_{1}$ and $Cost_{0}$ to be 0 which is satisfied when $\Theta^{T}x^{(i)} \ge 1$ if $y^{(i)} = 1$ and $\Theta^{T}x^{(i)} \le -1$ if $y^{(i)} = 0$. What's more, the minimizing term becomes $minimize \sum_{j=1}^{n}\Theta_{j}^{2}$ as the first term approaching to 0. This is consistent with optimization definition described in section 1.
+\begin{equation}\label{lambada_cost_fuction}
+\frac{1}{m} \biggl[\sum_{i=1}^{m} y^{(i)}Cost_{1}(\Theta^{T}x^{(i)}) + (1 - y^{(i)})Cost_{0}(\Theta^{T}x^{(i)})\biggr] + \frac{\lambda}{2m}\sum_{j=1}^{n}\Theta_{j}^{2}
+\end{equation}
+\begin{equation}\label{C_cost_fuction}
+C\biggl[\sum_{i=1}^{m} y^{(i)}Cost_{1}(\Theta^{T}x^{(i)}) + (1 - y^{(i)})Cost_{0}(\Theta^{T}x^{(i)})\biggr] + \sum_{j=1}^{n}\Theta_{j}^{2}
+\end{equation}
+
+\section {Kernels}
+Kernels are used to select features and make the hypothesis having a form like $h_{\Theta}(x) = \Theta_{0} + \Theta_{1}f_{1} + \Theta_{2}f_{2} + \ldots$. The features $f_{i}$ is defined as (\ref{feature_kernel}) where $l^{(i)}$ is landmarks we should manually choose. The most common kernel function is Gaussian kernel shown in (\ref{Gaussian_kernel}). Gaussian kernel measures the similarity of $x^{(i)}$ and landmarks $l^{(j)}$ which means that kernel values goes 1 while $x^{(i)}$ goes near to $l^{(j)}$ and goes 0 while $x^{(i)}$ goes far to $l^{(j)}$. The kernel is useful when the classification problem is non-linear which is not understood by me.
+\begin{equation}\label{feature_kernel}
+f_{i} = kernel(x, l^{(i)})
+\end{equation}
+\begin{equation}\label{Gaussian_kernel}
+GaussianKenel(x, l^{(i)}) = exp(\frac{||x-l^{(i)}||}{2\sigma^{2}})
+\end{equation}
 \end{document}

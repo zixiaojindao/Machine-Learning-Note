@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  1 JAN 2013 18:05
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  1 JAN 2013 20:01
 entering extended mode
 **D:/course/note/svm/svm.tex
 (D:/course/note/svm/svm.tex
@@ -124,28 +124,36 @@ File: Figure3.jpg Graphic file (type jpg)
 <use Figure3.jpg>
 Package pdftex.def Info: Figure3.jpg used on input line 51.
 (pdftex.def)             Requested size: 284.52756pt x 84.46434pt.
- [3 <D:/course/note/svm/Figure2.jpg> <D:/course/note/svm/Figure3.jpg>] (D:\cour
-se\note\svm\svm.aux) ) 
+ [3 <D:/course/note/svm/Figure2.jpg> <D:/course/note/svm/Figure3.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 74.
+ (d:\CTEX\MiKTeX\tex\latex\base\omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 74.
+ [4]
+(D:\course\note\svm\svm.aux) ) 
 Here is how much of TeX's memory you used:
- 1154 strings out of 495354
- 14702 string characters out of 3183858
- 65901 words of memory out of 3000000
- 4357 multiletter control sequences out of 15000+200000
+ 1175 strings out of 495354
+ 15035 string characters out of 3183858
+ 66933 words of memory out of 3000000
+ 4375 multiletter control sequences out of 15000+200000
  7280 words of font info for 26 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  27i,10n,19p,886b,233s stack positions out of 5000i,500n,10000p,200000b,50000s
-<d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/CTEX/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmmi5.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/CT
-EX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/CTEX/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr12.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-17.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/CTEX/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on svm.pdf (3 pages, 226424 bytes).
+<d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/CTEX/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/CTEX/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmmi5.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pf
+b><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/CTEX/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr12.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr17.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/CTEX
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/CTEX/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7
+.pfb>
+Output written on svm.pdf (4 pages, 241907 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
