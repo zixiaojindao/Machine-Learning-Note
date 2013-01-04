@@ -1,0 +1,23 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+
+\title{Sequence Assembly Review}
+\author{Sun Zhao}
+
+\begin{document}
+\maketitle
+\newpage
+
+\begin{abstract}
+The abstract abstract.
+\end{abstract}
+
+\section{Before Everything}
+I would like to first explain the motivation of this article before at the beginning. 
+\section{Introduction}
+
+\section{Performance}
+
+\end{document}
