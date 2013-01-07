@@ -8,8 +8,8 @@
             anchorcolor=black,
             citecolor=black
             ]{hyperref}
-            
-\title{DNA De novo Sequence Assembly Review}
+
+\title{De novo Sequence Assembly of Second Generation Sequence Review}
 \author{Sun Zhao}
 
 \begin{document}
@@ -60,10 +60,10 @@ What the sequencing stage produces is a collection of DNA fragments's nucleotide
 \begin{itemize}
  \item One cell contains multiple chromosomes as well as DNA chains which are sequenced together. DNA fragments from different DNA chain may overlap.
  \item DNA is a double-stranded structure, one strand may overlap with its opposite one.
- \item Sheared fragments along the genome cannot be modeled as a perfect Poisson process so that there may be some region not covered by reads. 
+ \item Sheared fragments along the genome cannot be modeled as a perfect Poisson process so that there may be some region not covered by reads.
  \item DNA sequence may contains repeat regions, and these regions may be incorrectly merged by overlap.
  \item Sequencing errors causes nucleotide deleting, replacing or inserting inside reads.
- \item Second generation sequencing platform produces much shorter reads so that the overlap possibility is exponentially increased. 
+ \item Second generation sequencing platform produces much shorter reads so that the overlap possibility is exponentially increased.
 \end{itemize}
 Among those above challenges, the repeat problem is the most challenge thing for short read assembly. A simple example is shown in Fig. \ref{repeat_example}A, where the assembler incorrectly collapses the two copies of repeat A leading to the creation of two contigs instead of one Fig. \ref{repeat_example}B.\\
 \begin{figure}[ht]
@@ -75,12 +75,64 @@ Among those above challenges, the repeat problem is the most challenge thing for
 \noindent The basic strategies for assembling sequences are categorized by two groups. One is reference based assembly, and the other one is de novo assembly. Reference based methods using a mapping tool to align reads against an existing reference sequence and build a sequence that is similar but not necessarily identical to the reference. The de novo assembly strategy does not use a reference sequence and is much useful for species whose reference sequence are unknown. This article only covers the de novo assembly and will illustrate the details in the subsequent sections.\\
 Ideally, an assembly program should produce one contig for every chromosome of the genome being sequenced. However, because of challenge3 and challenge4, the output of the assembler is interrupted into a set of contigs. In summary, Inputting a FASTA/FASTQ read file, the assembler outputs a set of contigs.
 \section{How to assembly sequence}
-Overlap-consensus-layout \cite{myers1995toward} is the traditional approach for first generation sequence. It denotes each read as a separate node, where two reads presenting a clean overlap are connected by a bidirected edge. Although overlap-consensus-layout approach is both intuitive and robust, especially in the case of long reads, it is very costly for pair-wise overlap computing when assembling high quantity short reads produced by second generation sequencing platform like SOLID and Illumina. Only one microread assembler, EDENA \cite{hernandez2008novo} was developed using this approach. Later, Idury and Waterman \cite{idury1995new} introduced the use of a sequence graph to represent an assembly, and this idea has been developed into the most popular framework for short read assembly--De Bruijn graph. Sequence De Bruijn graph is constructed from a set of kmers(k is a parameter) as nodes, and two kmers are connected if one kmer's last k-1 nucleotides is identical to the first k-1 nucleotides. kmers are produced by moving a fixed length(k) sliding window on the original read. The sequence de bruijn graph has following properties:
+Overlap-consensus-layout \cite{myers1995toward} is the traditional approach for first generation sequence. It denotes each read as a separate node, where two reads presenting a clean overlap are connected by a bidirected edge. Although overlap-consensus-layout approach is both intuitive and robust, especially in the case of long reads, it is very costly for pair-wise overlap computing when assembling high quantity short reads produced by second generation sequencing platform like SOLID and Illumina. Only one microread assembler, EDENA \cite{hernandez2008novo} was developed using this approach. Later, Idury and Waterman \cite{idury1995new} introduced the use of a sequence graph to represent an assembly, and this idea has been developed into the most popular framework for short read assembly--De Bruijn graph. Sequence De Bruijn graph is constructed from a set of kmers(k is a parameter) as nodes, and two kmers are connected if one kmer's last k-1 nucleotides is identical to the first k-1 nucleotides. kmers are produced by moving a fixed length(k) sliding window on the original read. Examples of kmers and de bruijn graph are show in Fig. \ref{kmer_example} and Fig. \ref{debruijn_graph_example}. The sequence de bruijn graph has following properties:
 \begin{itemize}
  \item Read with length of n generates n-k+1 kmers.
  \item Read is mapping to a unique path in the de bruijn graph.
  \item One node has at most 4 successors and 4 predecessors by adding `A', `G', `C', `T' at the first or last of the k-1 nucleotides.
 \end{itemize}
+\begin{figure}[ht]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=10cm]{Figure5.jpg}\\
+  \caption{}\label{kmer_example}
+\end{figure}
+\begin{figure}[ht]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=10cm]{Figure6.jpg}\\
+  \caption{}\label{debruijn_graph_example}
+\end{figure}
+According the property2 and property3, the node scale of the de bruijn graph is bounded by O(n-k+1) and the edge scale of it is bounded by O(8(n-k+1)). By the way, the length of human is about 3G base pairs whose de bruijn graph can be stored in a single server machine or cluster configured with 128GB. genome Property3 release the heavy cost of searching for all pair-wise overlap, thus making de bruijn graph approach feasible. Softwares include Velvet, ABYSS, ALLPATH, SOAPDenovo follows the de bruijn graph method. A brief comparison of these softwares is show in Table \ref{comparison_of_assemblers}. Software links can be found in Table \ref{links_of_assemblers}.\\
+I've read code and run programs of Velvet and ABYSS and provide some details about them. Velvet consists of two modules named velveth and velvetg where `h' means hash and `g' means graph. Velvet designed a novel graph construction algorithm and claim that it is efficient and memory saved approach on a single machine. velveth sequentially reads the FASTA/FASTQ read file and for each k-mer observed in the set of reads, a hash table records the ID of the first read encountered containing that k-mer and the position of its occurrence within that read. Each k-mer is recorded simultaneously to its reverse complement sequence. To ensure that each k-mer cannot be its own reverse complement, k must be odd. This first scan allows each read to be re-written as a set of new k-mers combined to overlaps with previously hashed reads. This new representation of the reads sequence is called a roadmap which is written into a file named ROADMAP. velvetg reads the ROADMAP file and creats a second database with the opposite information. It records, for each read, which of its original k-mers are overlapped by subsequent reads. The ordered set of original k-mers of that read is cut each time an overlap with another read begins or ends. For each uninterrupted sequence of original k-mers, a node is created. Finally, reads are traced through the graph using the roadmaps. Knowing the correspondence between original k-mers and the newly created nodes, it is possible to proceed from one node to the next, creating a new directed arc or incrementing the multiplicity of an existing one as appropriate at each step. The final output of velvet is produced by velvetg and saved as config.fa. ABYSS constructs de bruijn graph directly following the definition. The MPI version uses a hash function to determine the host machine for a node. The structure of ABYSS program is organized by a make file driver named ``abyss-pe". abyss-pe automatically finds the dependency of abyss modules and perform a minimum number of running modules. The final output is saved as *-contigs.fa, *-scanffolds.fa, *-unitigs.fa and a statistic file named *-stats.
+\begin{table}[ht]
+\begin{center}
+\caption{}\label{comparison_of_assemblers}
+\begin{tabular}{c|c|c|c}
+\hline
+Software & Parallelism & Large Scale Assembly & Memory Cost\\
+\hline
+Velvet & OpenMP & No & High\\
+\hline
+ABYSS & OpenMP+MPI & Yes & Low\\
+\hline
+ALLPATH& ? & Yes & ?\\
+\hline
+SOAPDenovo & ? & Yes &Low\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[ht]
+\begin{center}
+\caption{}\label{links_of_assemblers}
+\begin{tabular}{l|l}
+\hline
+Software &Software Available\\
+\hline
+Velvet &\href{http://www.ebi.ac.uk/~zerbino/velvet/}{http://www.ebi.ac.uk/~zerbino/velvet/}\\
+\hline
+ABYSS &\href{http://www.bcgsc.ca/platform/bioinfo/software/abyss/}{http://www.bcgsc.ca/platform/bioinfo/software/abyss/}\\
+\hline
+ALLPATH &\href{http://www.broadinstitute.org/science/programs/genome-biology/crd}{http://www.broadinstitute.org/science/programs/genome-biology/crd}\\
+\hline
+SOAPDenovo &\href{http://soap.genomics.org.cn/soapdenovo.html}{http://soap.genomics.org.cn/soapdenovo.html}\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
 \renewcommand\refname{Reference}
 \bibliographystyle{plain}
 \bibliography{Thesis}
