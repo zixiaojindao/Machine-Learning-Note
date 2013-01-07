@@ -9,7 +9,7 @@
             citecolor=black
             ]{hyperref}
 
-\title{Second Generation Sequence Assembly Review}
+\title{DNA De novo Sequence Assembly Review}
 \author{Sun Zhao}
 
 \begin{document}
@@ -30,7 +30,8 @@ In genetics and biochemistry, sequencing means to determine the primary structur
   \includegraphics[width=8cm]{Figure1.jpg}\\
   \caption{}\label{shot_gun_method}
 \end{figure}
-DNA molecules are double-stranded helices, consisting of two long complement strands. According to base paring principle--`A' complements with `T' and `G' complements with `C', the sequence of a strand can be inferred from its opposite one. Particular sequences denoted by 3' and 5' in the DNA strand is used to specify the orientation of the two strand, and for simplicity, if one strand is specified as 3' to 5', then the opposite one is 5' to 3'. Example 1 shows a double strain DNA fragment with pair-end reads(red string). Note that the pair-end reads are positioned on opposite strand and will be sequenced all from 3' to 5'. So the two pair-end reads string should be `AGCTAA' and `GCCAA'.
+
+\noindent DNA molecules are double-stranded helices, consisting of two long complement strands. According to base paring principle--`A' complements with `T' and `G' complements with `C', the sequence of a strand can be inferred from its opposite one. Particular sequences denoted by 3' and 5' in the DNA strand is used to specify the orientation of the two strand, and for simplicity, if one strand is specified as 3' to 5', then the opposite one is 5' to 3'. Example 1 shows a double strain DNA fragment with pair-end reads(red string). Note that the pair-end reads are positioned on opposite strand and will be sequenced all from 3' to 5'. So the two pair-end reads string should be `AGCTAA' and `GCCAA'.
 \begin{center}
   3'$\rightarrow$5'\\
   {\color{red}AGCTAA}TGCTATCTTGGC\\
@@ -38,8 +39,14 @@ DNA molecules are double-stranded helices, consisting of two long complement str
   5'$\rightarrow$3'\\
   Example 1\\
 \end{center}
-Sequencing methods and platform is developing as time goes. The typical genome analyser of first generation is Sanger\cite{sanger1977nucleotide} producing read lengths of approximately 800bp (typically 500-600bp with non-enriched DNA).Recently, new sequencing methods have emerged \cite{mardis2008impact}. Commercially available technologies include 454 Sequencing \cite{margulies2005genome}, Illumina genome analyser \cite{bentley2006whole} and SOLiD sequencing(\href{www.appliedbiosystems.com}{www.appliedbiosystems.com}). Compared to traditional Sanger methods, these technologies function with significantly lower production costs and higher throughput. However, the reads produced by these next-generation sequencing technologies are much shorter than traditional Sanger reads, currently around 400-500 base pairs (bp) for 454, 50bp for Illumina and 35bp for SOLiD. Because of their length, they must be produced in large quantities and at greater coverage depths than earlier sequencing projects.\\
-Reads are saved as a file by sequencing chip and the most popular format of read file is FASTA and FASTQ. A sequence in FASTA format begins with a single-line description, followed by lines of sequence data. The description line (def-line) is distinguished from the sequence data by a greater-than (``$>$") symbol at the beginning. It is recommended that all lines of text be shorter than 80 characters in length. An example sequence in FASTA format is shown in Fig. \ref{fasta_format}.A FASTQ file normally uses four lines per sequence. Line 1 begins with a '@' character and is followed by a sequence identifier and an optional description (like a FASTA title line). Line 2 is the raw sequence letters. Line 3 begins with a '+' character and is optionally followed by the same sequence identifier (and any description) again. Line 4 encodes the quality values for the sequence in Line 2, and must contain the same number of symbols as letters in the sequence. A minimal FASTQ file might look like this Fig. \ref{fastq_format}.
+
+\noindent Sequencing methods and platform is developing as time goes. The typical genome analyser of first generation is Sanger\cite{sanger1977nucleotide} producing read lengths of approximately 800bp (typically 500-600bp with non-enriched DNA).Recently, new sequencing methods have emerged \cite{mardis2008impact}. Commercially available technologies include 454 Sequencing \cite{margulies2005genome}, Illumina genome analyser \cite{bentley2006whole} and SOLiD sequencing(\href{www.appliedbiosystems.com}{www.appliedbiosystems.com}). Compared to traditional Sanger methods, these technologies function with significantly lower production costs and higher throughput. However, the reads produced by these next-generation sequencing technologies are much shorter than traditional Sanger reads, currently around 400-500 base pairs (bp) for 454, 50bp for Illumina and 35bp for SOLiD. Because of their length, they must be produced in large quantities and at greater coverage depths than earlier sequencing projects.\\
+
+\noindent Reads are saved as a file by sequencing chip and the most popular format of read file is FASTA and FASTQ. A sequence in FASTA format begins with a single-line description, followed by lines of sequence data. The description line (def-line) is distinguished from the sequence data by a greater-than (``$>$") symbol at the beginning. It is recommended that all lines of text be shorter than 80 characters in length. An example sequence in FASTA format is shown in Fig. \ref{fasta_format}.A FASTQ file normally uses four lines per sequence. Line 1 begins with a '@' character and is followed by a sequence identifier and an optional description (like a FASTA title line). Line 2 is the raw sequence letters. Line 3 begins with a '+' character and is optionally followed by the same sequence identifier (and any description) again. Line 4 encodes the quality values for the sequence in Line 2, and must contain the same number of symbols as letters in the sequence. A minimal FASTQ file might look like this Fig. \ref{fastq_format}. For more details about the quality line, please refer introduction on \href{http://en.wikipedia.org/wiki/FASTQ_format}{FASTQ Format}.\\
+
+\noindent The last thing to mention is RNA sequencing. As RNA is generated by transcription from DNA, the information is already present in the cell's DNA. The usual method to sequence RNA is first to reverse transcribe the sample to generate cDNA fragments. Then the cDNA are sequenced using DNA sequencing methods.\\
+
+\noindent In a word, the next generation sequencing platform generates a FASTA/FASTQ format file consisting string of description, read and quality(only exists in FASTQ file) for DNA/RNA samples.
 \begin{figure}[ht]
   \centering
   % Requires \usepackage{graphicx}
@@ -52,9 +59,28 @@ Reads are saved as a file by sequencing chip and the most popular format of read
   \includegraphics[width=10cm]{Figure3.jpg}\\
   \caption{}\label{fastq_format}
 \end{figure}
-
 \section{What is sequence assembly}
+What the sequencing stage produces is a collection of DNA fragments's nucleotide sequence, whereas, what we need is the nucleotide sequence of the original one. Sequence assembly tries to align and merge the DNA fragments in order to reconstruct the original sequence. The intuition is to take advantage of overlap information between reads to tie them up and piece into a longer DNA sequence. Challenges listed blow makes sequence assembly a very complicated task.\\
+\begin{itemize}
+ \item One cell contains multiple chromosomes as well as DNA chains which are sequenced together. DNA fragments from different DNA chain may overlap.
+ \item DNA is a double-stranded structure, one strand may overlap with its opposite one.
+ \item Sheared fragments along the genome cannot be modeled as a perfect Poisson process so that there may be some region not covered by reads. 
+ \item DNA sequence may contains repeat regions, and these regions may be incorrectly merged by overlap.
+ \item Sequencing errors causes nucleotide deleting, replacing or inserting inside reads.
+ \item Second generation sequencing platform produces much shorter reads so that the overlap possibility is exponentially increased. 
+\end{itemize}
 
+\noindent Among those above challenges, the repeat problem is the most challenge thing for short read assembly. A simple example is shown in Fig. \ref{repeat_example}A, where the assembler incorrectly collapses the two copies of repeat A leading to the creation of two contigs instead of one Fig. \ref{repeat_example}B.\\
+\begin{figure}[ht]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=10cm]{Figure4.jpg}\\
+  \caption{}\label{repeat_example}
+\end{figure}
+
+\noindent The basic strategies for assembling sequences are categorized by two groups. One is reference based assembly, and the other one is de novo assembly. Reference based methods using a mapping tool to align reads against an existing reference sequence and build a sequence that is similar but not necessarily identical to the reference. The de novo assembly strategy does not use a reference sequence and is much useful for species whose reference sequence are unknown. This article only covers the de novo assembly and will illustrate the details in the subsequent sections.
+
+\noindent Ideally, an assembly program should produce one contig for every chromosome of the genome being sequenced. However, because of challenge3 and challenge4, the 
 \renewcommand\refname{Reference}
 \bibliographystyle{plain}
 \bibliography{Thesis}
