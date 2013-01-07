@@ -6,6 +6,18 @@ D.R. Bentley.
 \newblock {\em Current opinion in genetics \& development}, 16(6):545--552,
   2006.
 
+\bibitem{hernandez2008novo}
+D.~Hernandez, P.~Fran{\c{c}}ois, L.~Farinelli, M.~{\O}ster{\aa}s, and
+  J.~Schrenzel.
+\newblock De novo bacterial genome sequencing: millions of very short reads
+  assembled on a desktop computer.
+\newblock {\em Genome research}, 18(5):802--809, 2008.
+
+\bibitem{idury1995new}
+R.M. Idury and M.S. Waterman.
+\newblock A new algorithm for dna sequence assembly.
+\newblock {\em Journal of Computational Biology}, 2(2):291--306, 1995.
+
 \bibitem{mardis2008impact}
 E.R. Mardis et~al.
 \newblock The impact of next-generation sequencing technology on genetics.
@@ -16,6 +28,11 @@ M.~Margulies, M.~Egholm, W.E. Altman, S.~Attiya, J.S. Bader, L.A. Bemben,
   J.~Berka, M.S. Braverman, Y.J. Chen, Z.~Chen, et~al.
 \newblock Genome sequencing in microfabricated high-density picolitre reactors.
 \newblock {\em Nature}, 437(7057):376--380, 2005.
+
+\bibitem{myers1995toward}
+E.W. Myers.
+\newblock Toward simplifying and accurately formulating fragment assembly.
+\newblock {\em Journal of Computational Biology}, 2(2):275--290, 1995.
 
 \bibitem{sanger1977nucleotide}
 F.~Sanger, GM~Air, BG~Barrell, NL~Brown, AR~Coulson, JC~Fiddes, PM~Slocombe,
