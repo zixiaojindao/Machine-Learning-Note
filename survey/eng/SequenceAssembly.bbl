@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{altschul1990basic}
+S.F. Altschul, W.~Gish, W.~Miller, E.W. Myers, D.J. Lipman, et~al.
+\newblock Basic local alignment search tool.
+\newblock {\em Journal of molecular biology}, 215(3):403--410, 1990.
+
 \bibitem{bentley2006whole}
 D.R. Bentley.
 \newblock Whole-genome re-sequencing.
@@ -37,6 +42,11 @@ D.~Hernandez, P.~Fran{\c{c}}ois, L.~Farinelli, M.~{\O}ster{\aa}s, and
 R.M. Idury and M.S. Waterman.
 \newblock A new algorithm for dna sequence assembly.
 \newblock {\em Journal of Computational Biology}, 2(2):291--306, 1995.
+
+\bibitem{kent2002blat}
+W.J. Kent.
+\newblock Blat—the blast-like alignment tool.
+\newblock {\em Genome research}, 12(4):656--664, 2002.
 
 \bibitem{li2010novo}
 R.~Li, H.~Zhu, J.~Ruan, W.~Qian, X.~Fang, Z.~Shi, Y.~Li, S.~Li, G.~Shan,
