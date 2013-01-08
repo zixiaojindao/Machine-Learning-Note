@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  8 JAN 2013 11:32
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  8 JAN 2013 15:05
 entering extended mode
 **D:/course/note/survey/eng/SequenceAssembly.tex
 (D:/course/note/survey/eng/SequenceAssembly.tex
@@ -228,7 +228,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {d:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
-<Figure1.jpg, id=28, 660.96938pt x 145.29282pt>
+<Figure1.jpg, id=32, 660.96938pt x 145.29282pt>
 File: Figure1.jpg Graphic file (type jpg)
  <use Figure1.jpg>
 Package pdftex.def Info: Figure1.jpg used on input line 30.
@@ -239,13 +239,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 35.
 
-<Figure2.jpg, id=45, 734.745pt x 231.11343pt>
+<Figure2.jpg, id=49, 734.745pt x 231.11343pt>
 File: Figure2.jpg Graphic file (type jpg)
  <use Figure2.jpg>
 Package pdftex.def Info: Figure2.jpg used on input line 49.
 (pdftex.def)             Requested size: 284.52756pt x 89.4991pt.
 
-<Figure3.jpg, id=46, 402.75468pt x 67.0003pt>
+<Figure3.jpg, id=50, 402.75468pt x 67.0003pt>
 File: Figure3.jpg Graphic file (type jpg)
  <use Figure3.jpg>
 Package pdftex.def Info: Figure3.jpg used on input line 55.
@@ -269,19 +269,19 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
  [4 <D:/course/note/survey/eng/Figure2.jpg> <D:/course/note/survey/eng/Figure3.
 jpg>]
-<Figure4.jpg, id=65, 660.96938pt x 188.20313pt>
+<Figure4.jpg, id=69, 660.96938pt x 188.20313pt>
 File: Figure4.jpg Graphic file (type jpg)
  <use Figure4.jpg>
 Package pdftex.def Info: Figure4.jpg used on input line 72.
 (pdftex.def)             Requested size: 284.52756pt x 81.01765pt.
- [5 <D:/course/note/survey/eng/Figure4.jpg>] <Figure5.jpg, id=77, 536.75531pt x
+ [5 <D:/course/note/survey/eng/Figure4.jpg>] <Figure5.jpg, id=81, 536.75531pt x
  349.305pt>
 File: Figure5.jpg Graphic file (type jpg)
 
 <use Figure5.jpg>
 Package pdftex.def Info: Figure5.jpg used on input line 87.
 (pdftex.def)             Requested size: 284.52756pt x 185.16273pt.
- <Figure6.jpg, id=78, 1224.07312pt x 409.53pt>
+ <Figure6.jpg, id=82, 1224.07312pt x 409.53pt>
 File: Figure6.jpg Graphic file (type jpg)
 
 <use Figure6.jpg>
@@ -293,40 +293,54 @@ Overfull \hbox (45.13972pt too wide) in paragraph at lines 119--132
  []
 
 [6 <D:/course/note/survey/eng/Figure5.jpg>] [7 <D:/course/note/survey/eng/Figur
-e6.jpg>] <Figure7.jpg, id=109, 423.08063pt x 133.24782pt>
+e6.jpg>] <Figure7.jpg, id=118, 423.08063pt x 133.24782pt>
 File: Figure7.jpg Graphic file (type jpg)
  <use Figure7.jpg>
 Package pdftex.def Info: Figure7.jpg used on input line 145.
 (pdftex.def)             Requested size: 284.52756pt x 89.61307pt.
 
-(D:\course\note\survey\eng\SequenceAssembly.bbl [8])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 151.
- [9 <D:/course/note/survey/eng/Figure7.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 151.
- (D:\course\note\survey\eng\SequenceAssembly.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 151.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 151.
+Overfull \hbox (4.30417pt too wide) in paragraph at lines 149--149
+[][][]\OT1/cmr/m/n/8 http://sourceforge.net/apps/mediawiki/dnaa/index.php?title
+=Whole[]Genome[]Simulation| 
+ []
+
+(D:\course\note\survey\eng\SequenceAssembly.bbl
+Overfull \hbox (14.27863pt too wide) in paragraph at lines 149--1
+\OT1/cmr/m/n/10 tail-s about ref-se-q is ex-plained on [][]http://www.ncbi.nlm.
+nih.gov/books/NBK50679/[][].
+ []
+
+[8] [9 <D:/course/note/survey/eng/Figure7.jpg>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 153.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 153.
+
+(D:\course\note\survey\eng\SequenceAssembly.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 153.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 153.
 Package rerunfilecheck Info: File `SequenceAssembly.out' has not changed.
-(rerunfilecheck)             Checksum: 5EFB117AB346E01523798A96BA66F862;233.
+(rerunfilecheck)             Checksum: B057716DB0991880297E4014DF65F290;294.
  ) 
 Here is how much of TeX's memory you used:
- 4964 strings out of 495354
- 72519 string characters out of 3183858
- 159698 words of memory out of 3000000
- 8071 multiletter control sequences out of 15000+200000
+ 4979 strings out of 495354
+ 72773 string characters out of 3183858
+ 158898 words of memory out of 3000000
+ 8077 multiletter control sequences out of 15000+200000
  8233 words of font info for 29 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,9n,28p,2187b,426s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,9n,28p,2187b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/CTEX/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmbx9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmmi10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/C
 TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/CTEX/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmr17.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/CTEX/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on SequenceAssembly.pdf (9 pages, 611959 bytes).
+r6.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/CTEX/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/
+CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on SequenceAssembly.pdf (10 pages, 651042 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

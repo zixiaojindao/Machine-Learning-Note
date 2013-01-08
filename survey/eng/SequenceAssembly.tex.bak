@@ -93,7 +93,7 @@ Overlap-consensus-layout \cite{myers1995toward} is the traditional approach for 
   \includegraphics[width=10cm]{Figure6.jpg}\\
   \caption{}\label{debruijn_graph_example}
 \end{figure}
-According the property2 and property3, the node scale of the de bruijn graph is bounded by O(n-k+1) and the edge scale of it is bounded by O(8(n-k+1)). By the way, the length of human is about 3G base pairs whose de bruijn graph can be stored in a single server machine or cluster configured with 128GB. genome Property3 release the heavy cost of searching for all pair-wise overlap, thus making de bruijn graph approach feasible. Softwares include Velvet, ABYSS, ALLPATH, SOAPDenovo follows the de bruijn graph method. A brief comparison of these softwares is show in Table \ref{comparison_of_assemblers}. Software links can be found in Table \ref{links_of_assemblers}.\\
+According the property2 and property3, the node scale of the de bruijn graph is bounded by O(n-k+1) and the edge scale of it is bounded by O(8(n-k+1)). By the way, the length of human is about 3G base pairs whose de bruijn graph can be stored in a single server machine or cluster configured with 128GB. genome Property3 release the heavy cost of searching for all pair-wise overlap, thus making de bruijn graph approach feasible. Softwares include Velvet \cite{zerbino2008velvet}, ABYSS \cite{simpson2009abyss}, ALLPATHS \cite{butler2008allpaths}, SOAPDenovo \cite{li2010novo} follows the de bruijn graph method. ABYSS and ALLPATHS claimed that they successfully assembled human's genome. A brief comparison of these softwares is show in Table \ref{comparison_of_assemblers}. Software links can be found in Table \ref{links_of_assemblers}.\\
 I've read code and run programs of Velvet and ABYSS and provide some details about them. Velvet consists of two modules named velveth and velvetg where `h' means hash and `g' means graph. Velvet designed a novel graph construction algorithm and claim that it is efficient and memory saved approach on a single machine. velveth sequentially reads the FASTA/FASTQ read file and for each k-mer observed in the set of reads, a hash table records the ID of the first read encountered containing that k-mer and the position of its occurrence within that read. Each k-mer is recorded simultaneously to its reverse complement sequence. To ensure that each k-mer cannot be its own reverse complement, k must be odd. This first scan allows each read to be re-written as a set of new k-mers combined to overlaps with previously hashed reads. This new representation of the reads sequence is called a roadmap which is written into a file named ROADMAP. velvetg reads the ROADMAP file and creats a second database with the opposite information. It records, for each read, which of its original k-mers are overlapped by subsequent reads. The ordered set of original k-mers of that read is cut each time an overlap with another read begins or ends. For each uninterrupted sequence of original k-mers, a node is created. Finally, reads are traced through the graph using the roadmaps. Knowing the correspondence between original k-mers and the newly created nodes, it is possible to proceed from one node to the next, creating a new directed arc or incrementing the multiplicity of an existing one as appropriate at each step. The final output of velvet is produced by velvetg and saved as config.fa. ABYSS constructs de bruijn graph directly following the definition. The MPI version uses a hash function to determine the host machine for a node. The structure of ABYSS program is organized by a make file driver named ``abyss-pe". abyss-pe automatically finds the dependency of abyss modules and perform a minimum number of running modules. The final output is saved as *-contigs.fa, *-scanffolds.fa, *-unitigs.fa and a statistic file named *-stats.\\
 \begin{table}[ht]
 \begin{center}
@@ -113,7 +113,6 @@ SOAPDenovo & ? & Yes &Low\\
 \end{tabular}
 \end{center}
 \end{table}
-
 \begin{table}[ht]
 \begin{center}
 \caption{}\label{links_of_assemblers}
@@ -132,7 +131,20 @@ SOAPDenovo &\href{http://soap.genomics.org.cn/soapdenovo.html}{http://soap.genom
 \end{tabular}
 \end{center}
 \end{table}
-After building the de bruijn graph, a graph correction process is applied. The idea of the graph correction process is to simplify the original graph into a long path by removing branches. 
+\noindent After building the de bruijn graph, a graph correction process is applied. The idea of the graph correction process is to simplify the original graph into a long path by removing branches. There are two types of branches--tips and bubbles. A tip is a chain of nodes which is disconnected on one end and a bubble is a circle with two common end points. Whenever a node A has only one outgoing arc that points to another node B that has only one incoming arc, the two nodes can be merged into a long node. Tips and bubbles are shown in Fig .\ref{branch_example}. Note that repeat region also creates circles in the graph, and we can not determine how many times should the repeat sequence occur. In the last step, if pair-end reads are provided, we can estimate the distance of seed nodes and find a feasible path between them.\\
+The last thing need to mention is that RNA assembly also named transcript assembly. RNA assembly is more complex than DNA assembly, observing the reasons:
+\begin{itemize}
+ \item some transcripts have low coverage, whereas others are highly expressed.
+ \item reads with sequencing errors derived from a highly expressed transcript may be more abundant than correct reads from a transcript that is not highly expressed.
+ \item transcripts encoded by adjacent loci can overlap and thus can be erroneously fused to form a chimeric transcript.
+\end{itemize}
+Directly using DNA assemblers to assemble RNA sequences only outputs rather bad results. Velvet and ABYSS have extend themselves into Velvet\_Oases \cite{schulz2012oases} and Trans-ABYSS \cite{robertson2010novo} separately to address the additional challenge presented by RNA assembly. Recently, Trinity \cite{grabherr2011full} was specially designed for transcript assembly and had a relative better assembling ability than Velvet_Oases and Trans-ABYSS.
+\begin{figure}[ht]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=10cm]{Figure7.jpg}\\
+  \caption{}\label{branch_example}
+\end{figure}
 \renewcommand\refname{Reference}
 \bibliographystyle{plain}
 \bibliography{Thesis}

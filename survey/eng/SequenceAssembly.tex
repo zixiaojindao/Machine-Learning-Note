@@ -137,14 +137,16 @@ The last thing need to mention is that RNA assembly also named transcript assemb
  \item some transcripts have low coverage, whereas others are highly expressed.
  \item reads with sequencing errors derived from a highly expressed transcript may be more abundant than correct reads from a transcript that is not highly expressed.
  \item transcripts encoded by adjacent loci can overlap and thus can be erroneously fused to form a chimeric transcript.
-\end{itemize}   
-Directly using DNA assemblers to assemble RNA sequences only outputs rather bad results. Velvet and ABYSS have extend themselves into Velvet\_Oases and Trans-ABYSS separately to address the additional challenge presented by RNA assembly. 
+\end{itemize}
+Directly using DNA assemblers to assemble RNA sequences only outputs rather bad results. Velvet and ABYSS have extend themselves into Velvet\_Oases \cite{schulz2012oases} and Trans-ABYSS \cite{robertson2010novo} separately to address the additional challenge presented by RNA assembly. Recently, Trinity \cite{grabherr2011full} was specially designed for transcript assembly. Zhao et. al \cite{zhao2011optimizing} made a early comparison of transcript assembly and give a full view of performance, result, resource usage evaluation. It shows Trinity has a relative better assembling ability than Velvet\_Oases and Trans-ABYSS but much slower and memory cost while assembling large scale sequences. A group of HPC developers \cite{henschel2012trinity} made efforts to accelerating trinity and reducing its memory usage which make trinity a first choice when assembling transcript sequences.
 \begin{figure}[ht]
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=10cm]{Figure7.jpg}\\
   \caption{}\label{branch_example}
 \end{figure}
+\section{How to Evaluate Assembler}
+To evaluate present assemblers or assemblers designed by ourselves, the first thing to do is to prepare input data. Usually, two kinds of data are used to evaluate assemblers, synthetic data and real data. dwgsim \footnote{http://sourceforge.net/apps/mediawiki/dnaa/index.php?title=Whole\_Genome\_Simulation} is whole genome simulator based on a reference genome. Reference genome can be found on \href{ftp://ftp.ncbi.nlm.nih.gov/refseq/}{ftp://ftp.ncbi.nlm.nih.gov/refseq/} and \href{ftp://ftp.ncbi.nlm.nih.gov/genomes/}{ftp://ftp.ncbi.nlm.nih.gov/genomes/}. Details about refseq is explained on \href{http://www.ncbi.nlm.nih.gov/books/NBK50679/}{http://www.ncbi.nlm.nih.gov/books/NBK50679/}. NCBI's SRA database \footnote{http://www.ncbi.nlm.nih.gov/sra} provides a large collection of read read sequences. Users search this database using an access code begin with SRP(studies), SRX(experients) or SRR(runs).
 \renewcommand\refname{Reference}
 \bibliographystyle{plain}
 \bibliography{Thesis}
