@@ -1,10 +1,16 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{bentley2006whole}
 D.R. Bentley.
 \newblock Whole-genome re-sequencing.
 \newblock {\em Current opinion in genetics \& development}, 16(6):545--552,
   2006.
+
+\bibitem{butler2008allpaths}
+J.~Butler, I.~MacCallum, M.~Kleber, I.A. Shlyakhter, M.K. Belmonte, E.S.
+  Lander, C.~Nusbaum, and D.B. Jaffe.
+\newblock Allpaths: De novo assembly of whole-genome shotgun microreads.
+\newblock {\em Genome research}, 18(5):810--820, 2008.
 
 \bibitem{hernandez2008novo}
 D.~Hernandez, P.~Fran{\c{c}}ois, L.~Farinelli, M.~{\O}ster{\aa}s, and
@@ -17,6 +23,13 @@ D.~Hernandez, P.~Fran{\c{c}}ois, L.~Farinelli, M.~{\O}ster{\aa}s, and
 R.M. Idury and M.S. Waterman.
 \newblock A new algorithm for dna sequence assembly.
 \newblock {\em Journal of Computational Biology}, 2(2):291--306, 1995.
+
+\bibitem{li2010novo}
+R.~Li, H.~Zhu, J.~Ruan, W.~Qian, X.~Fang, Z.~Shi, Y.~Li, S.~Li, G.~Shan,
+  K.~Kristiansen, et~al.
+\newblock De novo assembly of human genomes with massively parallel short read
+  sequencing.
+\newblock {\em Genome research}, 20(2):265--272, 2010.
 
 \bibitem{mardis2008impact}
 E.R. Mardis et~al.
@@ -39,5 +52,17 @@ F.~Sanger, GM~Air, BG~Barrell, NL~Brown, AR~Coulson, JC~Fiddes, PM~Slocombe,
   and M.~Smith.
 \newblock Nucleotide sequence of bacteriophage (d x174 dna.
 \newblock 1977.
+
+\bibitem{simpson2009abyss}
+J.T. Simpson, K.~Wong, S.D. Jackman, J.E. Schein, S.J.M. Jones, and
+  {\.I}.~Birol.
+\newblock Abyss: a parallel assembler for short read sequence data.
+\newblock {\em Genome research}, 19(6):1117--1123, 2009.
+
+\bibitem{zerbino2008velvet}
+D.R. Zerbino and E.~Birney.
+\newblock Velvet: algorithms for de novo short read assembly using de bruijn
+  graphs.
+\newblock {\em Genome research}, 18(5):821--829, 2008.
 
 \end{thebibliography}
