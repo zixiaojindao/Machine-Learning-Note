@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  8 JAN 2013 20:09
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  8 JAN 2013 20:15
 entering extended mode
-**D:/course/note/survey/eng/SequenceAssembly.tex
-(D:/course/note/survey/eng/SequenceAssembly.tex
+**D:/course/note/survey/chi/Â∫èÂàóÁªÑË£Ö.tex
+(D:/course/note/survey/chi/Â∫èÂàóÁªÑË£Ö.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (d:\CTEX\MiKTeX\tex\latex\base\article.cls
@@ -172,7 +172,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip43
 )
-(D:\course\note\survey\eng\SequenceAssembly.aux)
+(D:\course\note\survey\chi\Â∫èÂàóÁªÑË£Ö.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
@@ -216,8 +216,8 @@ LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
 
-(D:\course\note\survey\eng\SequenceAssembly.out)
-(D:\course\note\survey\eng\SequenceAssembly.out)
+(D:\course\note\survey\chi\Â∫èÂàóÁªÑË£Ö.out)
+(D:\course\note\survey\chi\Â∫èÂàóÁªÑË£Ö.out)
 \@outlinefile=\write3
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 13.
@@ -228,10 +228,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {d:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
-Overfull \hbox (3.83966pt too wide) in paragraph at lines 16--17
-[]\OT1/cmr/m/n/9 Second-generation high-throughput se-quenc-ing meth-od-s gen-e
-r-ates large
- []
+Missing character: There is no µ in font cmr9!
+Missing character: There is no ⁄ in font cmr9!
+Missing character: There is no ∂ in font cmr9!
+Missing character: There is no ˛ in font cmr9!
+Missing character: There is no ¥ in font cmr9!
+Missing character: There is no ˙ in font cmr9!
+Missing character: There is no ∏ in font cmr9!
+Missing character: There is no ﬂ in font cmr9!
+Missing character: There is no Õ in font cmr9!
+Missing character: There is no ® in font cmr9!
+Missing character: There is no ¡ in font cmr9!
+Missing character: There is no ø in font cmr9!
+Missing character: There is no ≤ in font cmr9!
+Missing character: There is no ‚ in font cmr9!
+Missing character: There is no – in font cmr9!
+Missing character: There is no Ú in font cmr9!
 
 <Figure1.jpg, id=40, 660.96938pt x 145.29282pt>
 File: Figure1.jpg Graphic file (type jpg)
@@ -244,13 +256,29 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 31.
 
-<Figure2.jpg, id=57, 734.745pt x 231.11343pt>
+
+LaTeX Warning: Citation `sanger1977nucleotide' on page 3 undefined on input lin
+e 38.
+
+
+LaTeX Warning: Citation `mardis2008impact' on page 3 undefined on input line 38
+.
+
+
+LaTeX Warning: Citation `margulies2005genome' on page 3 undefined on input line
+ 38.
+
+
+LaTeX Warning: Citation `bentley2006whole' on page 3 undefined on input line 38
+.
+
+<Figure2.jpg, id=52, 734.745pt x 231.11343pt>
 File: Figure2.jpg Graphic file (type jpg)
  <use Figure2.jpg>
 Package pdftex.def Info: Figure2.jpg used on input line 45.
 (pdftex.def)             Requested size: 284.52756pt x 89.4991pt.
 
-<Figure3.jpg, id=58, 402.75468pt x 67.0003pt>
+<Figure3.jpg, id=53, 402.75468pt x 67.0003pt>
 File: Figure3.jpg Graphic file (type jpg)
  <use Figure3.jpg>
 Package pdftex.def Info: Figure3.jpg used on input line 51.
@@ -261,7 +289,7 @@ Overfull \hbox (2.19513pt too wide) in paragraph at lines 38--54
 l-i-ty(only ex-ist-s in FASTQ
  []
 
-[3 <D:/course/note/survey/eng/Figure1.jpg>]
+[3 <D:/course/note/survey/chi/Figure1.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
@@ -272,43 +300,97 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
- [4 <D:/course/note/survey/eng/Figure2.jpg> <D:/course/note/survey/eng/Figure3.
+ [4 <D:/course/note/survey/chi/Figure2.jpg> <D:/course/note/survey/chi/Figure3.
 jpg>]
-<Figure4.jpg, id=77, 660.96938pt x 188.20313pt>
+<Figure4.jpg, id=69, 660.96938pt x 188.20313pt>
 File: Figure4.jpg Graphic file (type jpg)
  <use Figure4.jpg>
 Package pdftex.def Info: Figure4.jpg used on input line 68.
 (pdftex.def)             Requested size: 284.52756pt x 81.01765pt.
- [5 <D:/course/note/survey/eng/Figure4.jpg>] <Figure5.jpg, id=88, 536.75531pt x
- 349.305pt>
-File: Figure5.jpg Graphic file (type jpg)
 
-<use Figure5.jpg>
+
+LaTeX Warning: Citation `myers1995toward' on page 5 undefined on input line 74.
+
+
+
+LaTeX Warning: Citation `hernandez2008novo' on page 5 undefined on input line 7
+4.
+
+
+LaTeX Warning: Citation `idury1995new' on page 5 undefined on input line 74.
+
+[5 <D:/course/note/survey/chi/Figure4.jpg>]
+<Figure5.jpg, id=77, 536.75531pt x 349.305pt>
+File: Figure5.jpg Graphic file (type jpg)
+ <use Figure5.jpg>
 Package pdftex.def Info: Figure5.jpg used on input line 83.
 (pdftex.def)             Requested size: 284.52756pt x 185.16273pt.
- <Figure6.jpg, id=89, 1224.07312pt x 409.53pt>
-File: Figure6.jpg Graphic file (type jpg)
 
-<use Figure6.jpg>
+<Figure6.jpg, id=78, 1224.07312pt x 409.53pt>
+File: Figure6.jpg Graphic file (type jpg)
+ <use Figure6.jpg>
 Package pdftex.def Info: Figure6.jpg used on input line 89.
 (pdftex.def)             Requested size: 284.52756pt x 95.18974pt.
+
+
+LaTeX Warning: Citation `zerbino2008velvet' on page 6 undefined on input line 9
+2.
+
+
+LaTeX Warning: Citation `simpson2009abyss' on page 6 undefined on input line 92
+.
+
+
+LaTeX Warning: Citation `butler2008allpaths' on page 6 undefined on input line 
+92.
+
+
+LaTeX Warning: Citation `li2010novo' on page 6 undefined on input line 92.
+
 
 Overfull \hbox (45.13972pt too wide) in paragraph at lines 115--128
  [] 
  []
 
-[6 <D:/course/note/survey/eng/Figure5.jpg>] [7 <D:/course/note/survey/eng/Figur
-e6.jpg>] <Figure7.jpg, id=126, 423.08063pt x 133.24782pt>
+[6 <D:/course/note/survey/chi/Figure5.jpg> <D:/course/note/survey/chi/Figure6.j
+pg>] [7]
+
+LaTeX Warning: Citation `schulz2012oases' on page 8 undefined on input line 137
+.
+
+
+LaTeX Warning: Citation `robertson2010novo' on page 8 undefined on input line 1
+37.
+
+
+LaTeX Warning: Citation `grabherr2011full' on page 8 undefined on input line 13
+7.
+
+
+LaTeX Warning: Citation `zhao2011optimizing' on page 8 undefined on input line 
+137.
+
+
+LaTeX Warning: Citation `henschel2012trinity' on page 8 undefined on input line
+ 137.
+
+<Figure7.jpg, id=99, 423.08063pt x 133.24782pt>
 File: Figure7.jpg Graphic file (type jpg)
  <use Figure7.jpg>
 Package pdftex.def Info: Figure7.jpg used on input line 141.
 (pdftex.def)             Requested size: 284.52756pt x 89.61307pt.
 
-[8]
 Overfull \hbox (4.30417pt too wide) in paragraph at lines 145--145
 [][][]\OT1/cmr/m/n/8 http://sourceforge.net/apps/mediawiki/dnaa/index.php?title
 =Whole[]Genome[]Simulation| 
  []
+
+
+LaTeX Warning: Citation `altschul1990basic' on page 8 undefined on input line 1
+45.
+
+
+LaTeX Warning: Citation `kent2002blat' on page 8 undefined on input line 145.
 
 
 Overfull \hbox (6.13977pt too wide) in paragraph at lines 145--146
@@ -322,46 +404,48 @@ Overfull \hbox (2.38043pt too wide) in paragraph at lines 145--146
 /NBK50679/[][]. NCBI's
  []
 
-[9 <D:/course/note/survey/eng/Figure7.jpg>]
+[8] [9 <D:/course/note/survey/chi/Figure7.jpg>]
 Overfull \hbox (90.47322pt too wide) in paragraph at lines 151--166
  [] 
  []
 
-(D:\course\note\survey\eng\SequenceAssembly.bbl [10]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no î in font cmr10!
- [11])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
- [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
+(D:\course\note\survey\chi\Â∫èÂàóÁªÑË£Ö.bbl
 
-(D:\course\note\survey\eng\SequenceAssembly.aux)
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
+ (D:\course\note\survey\chi\Â∫èÂàóÁªÑË£Ö.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
-Package rerunfilecheck Info: File `SequenceAssembly.out' has not changed.
+Package rerunfilecheck Info: File `Â∫èÂàóÁªÑË£Ö.out' has not changed.
 (rerunfilecheck)             Checksum: ABC5C732F12E1C78C324CBE877A2CF20;392.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 4992 strings out of 495354
- 72938 string characters out of 3183858
- 159993 words of memory out of 3000000
- 8082 multiletter control sequences out of 15000+200000
- 8233 words of font info for 29 fonts, out of 3000000 for 9000
+ 4970 strings out of 495354
+ 72464 string characters out of 3183858
+ 158298 words of memory out of 3000000
+ 8080 multiletter control sequences out of 15000+200000
+ 8195 words of font info for 29 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,9n,28p,3018b,422s stack positions out of 5000i,500n,10000p,200000b,50000s
-<d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/CTEX/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmbx9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmmi10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/C
-TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/CTEX/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmr17.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r6.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/CTEX/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmr9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/
-CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on SequenceAssembly.pdf (12 pages, 667209 bytes).
+ 29i,9n,28p,3014b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
+<d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/CTEX/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmbx9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/
+CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/CTEX/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr12.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr17.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/CTEX/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/CTEX/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr8.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Â∫èÂàóÁªÑË£Ö.pdf (10 pages, 632014 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
  92 words of extra memory for PDF output out of 10000 (max. 10000000)
 
