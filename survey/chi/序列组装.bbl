@@ -38,11 +38,6 @@ D.~Hernandez, P.~Fran{\c{c}}ois, L.~Farinelli, M.~{\O}ster{\aa}s, and
   assembled on a desktop computer.
 \newblock {\em Genome research}, 18(5):802--809, 2008.
 
-\bibitem{idury1995new}
-R.M. Idury and M.S. Waterman.
-\newblock A new algorithm for dna sequence assembly.
-\newblock {\em Journal of Computational Biology}, 2(2):291--306, 1995.
-
 \bibitem{kent2002blat}
 W.J. Kent.
 \newblock Blat—the blast-like alignment tool.
