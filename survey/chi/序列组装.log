@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  8 JAN 2013 20:15
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  9 JAN 2013 11:33
 entering extended mode
 **D:/course/note/survey/chi/序列组装.tex
 (D:/course/note/survey/chi/序列组装.tex
@@ -64,6 +64,18 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
+(d:\CTEX\MiKTeX\tex\latex\cjk\CJK.sty
+Package: CJK 2008/12/29 4.8.2
+
+(d:\CTEX\MiKTeX\tex\latex\cjk\mule\MULEenc.sty
+Package: MULEenc 2008/12/29 4.8.2
+)
+(d:\CTEX\MiKTeX\tex\latex\cjk\CJK.enc
+File: CJK.enc 2008/12/29 4.8.2
+)
+LaTeX Info: Redefining \selectfont on input line 756.
+\CJK@indent=\box26
+)
 (d:\CTEX\MiKTeX\tex\latex\hyperref\hyperref.sty
 Package: hyperref 2012/02/06 v6.82o Hypertext links for LaTeX
 
@@ -127,6 +139,7 @@ File: pd1enc.def 2012/02/06 v6.82o Hyperref: PDFDocEncoding definition (HO)
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 3925.
+Package hyperref Info: Option `CJKbookmarks' set `true' on input line 3925.
 Package hyperref Info: Hyper figures OFF on input line 4046.
 Package hyperref Info: Link nesting OFF on input line 4051.
 Package hyperref Info: Hyper index ON on input line 4054.
@@ -173,26 +186,90 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip43
 )
 (D:\course\note\survey\chi\序列组装.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 (d:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count98
 \scratchdimen=\dimen109
-\scratchbox=\box26
+\scratchbox=\box27
 \nofMPsegments=\count99
 \nofMParguments=\count100
 \everyMPshowfont=\toks15
@@ -202,8 +279,8 @@ LaTeX Font Info:    ... okay on input line 11.
 \makeMPintoPDFobject=\count103
 \everyMPtoPDFconversion=\toks16
 )
-\AtBeginShipoutBox=\box27
-Package hyperref Info: Link coloring ON on input line 11.
+\AtBeginShipoutBox=\box28
+Package hyperref Info: Link coloring ON on input line 10.
  (d:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
@@ -212,240 +289,259 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count104
 )
-LaTeX Info: Redefining \ref on input line 11.
-LaTeX Info: Redefining \pageref on input line 11.
-LaTeX Info: Redefining \nameref on input line 11.
+LaTeX Info: Redefining \ref on input line 10.
+LaTeX Info: Redefining \pageref on input line 10.
+LaTeX Info: Redefining \nameref on input line 10.
 
 (D:\course\note\survey\chi\序列组装.out)
 (D:\course\note\survey\chi\序列组装.out)
 \@outlinefile=\write3
+
+(d:\CTEX\MiKTeX\tex\latex\cjk\standard.bdg
+File: standard.bdg 2008/12/29 4.8.2
+)
+(d:\CTEX\MiKTeX\tex\latex\cjk\extended.enc
+File: extended.enc 2008/12/29 4.8.2
+)
+(d:\CTEX\MiKTeX\tex\latex\cjk\extended.chr
+File: extended.chr 2008/12/29 4.8.2
+)
+LaTeX Font Info:    Try loading font information for C19+song on input line 15.
+
+
+(d:\CTEX\CTeX\tex\latex\CJK\GB\c19song.fd
+File: c19song.fd 2009/09/23 4.8.2
+)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 13.
+(Font)              <12> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 13.
+(Font)              <8> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 13.
+(Font)              <6> on input line 15.
  [1
 
 {d:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-Missing character: There is no � in font cmr9!
-
-<Figure1.jpg, id=40, 660.96938pt x 145.29282pt>
+<Figure1.jpg, id=50, 660.96938pt x 145.29282pt>
 File: Figure1.jpg Graphic file (type jpg)
  <use Figure1.jpg>
-Package pdftex.def Info: Figure1.jpg used on input line 26.
+Package pdftex.def Info: Figure1.jpg used on input line 31.
 (pdftex.def)             Requested size: 227.62204pt x 50.03517pt.
- [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 31.
+(Font)              <7> on input line 36.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 31.
-
+(Font)              <5> on input line 36.
+ [2 <D:/course/note/survey/chi/Figure1.jpg>]
 
 LaTeX Warning: Citation `sanger1977nucleotide' on page 3 undefined on input lin
-e 38.
+e 43.
 
 
-LaTeX Warning: Citation `mardis2008impact' on page 3 undefined on input line 38
+LaTeX Warning: Citation `mardis2008impact' on page 3 undefined on input line 43
 .
 
 
 LaTeX Warning: Citation `margulies2005genome' on page 3 undefined on input line
- 38.
+ 43.
 
 
-LaTeX Warning: Citation `bentley2006whole' on page 3 undefined on input line 38
+LaTeX Warning: Citation `bentley2006whole' on page 3 undefined on input line 43
 .
 
-<Figure2.jpg, id=52, 734.745pt x 231.11343pt>
+<Figure2.jpg, id=85, 734.745pt x 231.11343pt>
 File: Figure2.jpg Graphic file (type jpg)
  <use Figure2.jpg>
-Package pdftex.def Info: Figure2.jpg used on input line 45.
+Package pdftex.def Info: Figure2.jpg used on input line 50.
 (pdftex.def)             Requested size: 284.52756pt x 89.4991pt.
 
-<Figure3.jpg, id=53, 402.75468pt x 67.0003pt>
+<Figure3.jpg, id=86, 402.75468pt x 67.0003pt>
 File: Figure3.jpg Graphic file (type jpg)
  <use Figure3.jpg>
-Package pdftex.def Info: Figure3.jpg used on input line 51.
+Package pdftex.def Info: Figure3.jpg used on input line 56.
 (pdftex.def)             Requested size: 284.52756pt x 47.33232pt.
 
-Overfull \hbox (2.19513pt too wide) in paragraph at lines 38--54
+Overfull \hbox (2.19513pt too wide) in paragraph at lines 43--59
 \OT1/cmr/m/n/10 for-mat file con-sist-ing string of de-scrip-tion, read and qua
 l-i-ty(only ex-ist-s in FASTQ
  []
 
-[3 <D:/course/note/survey/chi/Figure1.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
-(d:\CTEX\MiKTeX\tex\latex\base\omscmr.fd
+[3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 62.
+ (d:\CTEX\MiKTeX\tex\latex\base\omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
- [4 <D:/course/note/survey/chi/Figure2.jpg> <D:/course/note/survey/chi/Figure3.
-jpg>]
-<Figure4.jpg, id=69, 660.96938pt x 188.20313pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
+
+<Figure4.jpg, id=97, 660.96938pt x 188.20313pt>
 File: Figure4.jpg Graphic file (type jpg)
  <use Figure4.jpg>
-Package pdftex.def Info: Figure4.jpg used on input line 68.
+Package pdftex.def Info: Figure4.jpg used on input line 73.
 (pdftex.def)             Requested size: 284.52756pt x 81.01765pt.
+ [4 <D:/course/note/survey/chi/Figure2.jpg> <D:/course/note/survey/chi/Figure3.
+jpg>]
 
-
-LaTeX Warning: Citation `myers1995toward' on page 5 undefined on input line 74.
+LaTeX Warning: Citation `myers1995toward' on page 5 undefined on input line 79.
 
 
 
 LaTeX Warning: Citation `hernandez2008novo' on page 5 undefined on input line 7
-4.
+9.
 
 
-LaTeX Warning: Citation `idury1995new' on page 5 undefined on input line 74.
+LaTeX Warning: Citation `idury1995new' on page 5 undefined on input line 79.
 
-[5 <D:/course/note/survey/chi/Figure4.jpg>]
-<Figure5.jpg, id=77, 536.75531pt x 349.305pt>
+<Figure5.jpg, id=105, 536.75531pt x 349.305pt>
 File: Figure5.jpg Graphic file (type jpg)
  <use Figure5.jpg>
-Package pdftex.def Info: Figure5.jpg used on input line 83.
+Package pdftex.def Info: Figure5.jpg used on input line 88.
 (pdftex.def)             Requested size: 284.52756pt x 185.16273pt.
 
-<Figure6.jpg, id=78, 1224.07312pt x 409.53pt>
+<Figure6.jpg, id=106, 1224.07312pt x 409.53pt>
 File: Figure6.jpg Graphic file (type jpg)
  <use Figure6.jpg>
-Package pdftex.def Info: Figure6.jpg used on input line 89.
+Package pdftex.def Info: Figure6.jpg used on input line 94.
 (pdftex.def)             Requested size: 284.52756pt x 95.18974pt.
 
 
-LaTeX Warning: Citation `zerbino2008velvet' on page 6 undefined on input line 9
-2.
+LaTeX Warning: Citation `zerbino2008velvet' on page 5 undefined on input line 9
+7.
 
 
-LaTeX Warning: Citation `simpson2009abyss' on page 6 undefined on input line 92
+LaTeX Warning: Citation `simpson2009abyss' on page 5 undefined on input line 97
 .
 
 
-LaTeX Warning: Citation `butler2008allpaths' on page 6 undefined on input line 
-92.
+LaTeX Warning: Citation `butler2008allpaths' on page 5 undefined on input line 
+97.
 
 
-LaTeX Warning: Citation `li2010novo' on page 6 undefined on input line 92.
+LaTeX Warning: Citation `li2010novo' on page 5 undefined on input line 97.
 
 
-Overfull \hbox (45.13972pt too wide) in paragraph at lines 115--128
+Overfull \hbox (45.13972pt too wide) in paragraph at lines 120--133
  [] 
  []
 
-[6 <D:/course/note/survey/chi/Figure5.jpg> <D:/course/note/survey/chi/Figure6.j
-pg>] [7]
+[5 <D:/course/note/survey/chi/Figure4.jpg>] [6 <D:/course/note/survey/chi/Figur
+e5.jpg> <D:/course/note/survey/chi/Figure6.jpg>] [7]
 
-LaTeX Warning: Citation `schulz2012oases' on page 8 undefined on input line 137
+LaTeX Warning: Citation `schulz2012oases' on page 8 undefined on input line 142
 .
 
 
 LaTeX Warning: Citation `robertson2010novo' on page 8 undefined on input line 1
-37.
+42.
 
 
-LaTeX Warning: Citation `grabherr2011full' on page 8 undefined on input line 13
-7.
+LaTeX Warning: Citation `grabherr2011full' on page 8 undefined on input line 14
+2.
 
 
 LaTeX Warning: Citation `zhao2011optimizing' on page 8 undefined on input line 
-137.
+142.
 
 
 LaTeX Warning: Citation `henschel2012trinity' on page 8 undefined on input line
- 137.
+ 142.
 
-<Figure7.jpg, id=99, 423.08063pt x 133.24782pt>
+<Figure7.jpg, id=131, 423.08063pt x 133.24782pt>
 File: Figure7.jpg Graphic file (type jpg)
  <use Figure7.jpg>
-Package pdftex.def Info: Figure7.jpg used on input line 141.
+Package pdftex.def Info: Figure7.jpg used on input line 146.
 (pdftex.def)             Requested size: 284.52756pt x 89.61307pt.
 
-Overfull \hbox (4.30417pt too wide) in paragraph at lines 145--145
+Overfull \hbox (4.30417pt too wide) in paragraph at lines 150--150
 [][][]\OT1/cmr/m/n/8 http://sourceforge.net/apps/mediawiki/dnaa/index.php?title
 =Whole[]Genome[]Simulation| 
  []
 
 
 LaTeX Warning: Citation `altschul1990basic' on page 8 undefined on input line 1
-45.
+50.
 
 
-LaTeX Warning: Citation `kent2002blat' on page 8 undefined on input line 145.
+LaTeX Warning: Citation `kent2002blat' on page 8 undefined on input line 150.
 
 
-Overfull \hbox (6.13977pt too wide) in paragraph at lines 145--146
+Overfull \hbox (6.13977pt too wide) in paragraph at lines 150--151
 \OT1/cmr/m/n/10 p://ftp.ncbi.nlm.nih.gov/refseq/[][], [][]ft-p://ftp.ncbi.nlm.n
 ih.gov/genomes/[][] or NCBI's
  []
 
 
-Overfull \hbox (2.38043pt too wide) in paragraph at lines 145--146
+Overfull \hbox (2.38043pt too wide) in paragraph at lines 150--151
 \OT1/cmr/m/n/10 ref-se-q is ex-plained on [][]http://www.ncbi.nlm.nih.gov/books
 /NBK50679/[][]. NCBI's
  []
 
-[8] [9 <D:/course/note/survey/chi/Figure7.jpg>]
-Overfull \hbox (90.47322pt too wide) in paragraph at lines 151--166
+[8 <D:/course/note/survey/chi/Figure7.jpg>]
+Overfull \hbox (90.47322pt too wide) in paragraph at lines 156--171
  [] 
  []
 
-(D:\course\note\survey\chi\序列组装.bbl
+(D:\course\note\survey\chi\序列组装.bbl [9]
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
  [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
  (D:\course\note\survey\chi\序列组装.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
 Package rerunfilecheck Info: File `序列组装.out' has not changed.
-(rerunfilecheck)             Checksum: ABC5C732F12E1C78C324CBE877A2CF20;392.
+(rerunfilecheck)             Checksum: 5F4F9BE832267FD24449F549C4012E34;374.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4970 strings out of 495354
- 72464 string characters out of 3183858
- 158298 words of memory out of 3000000
- 8080 multiletter control sequences out of 15000+200000
- 8195 words of font info for 29 fonts, out of 3000000 for 9000
+ 6362 strings out of 495354
+ 89693 string characters out of 3183858
+ 183582 words of memory out of 3000000
+ 9413 multiletter control sequences out of 15000+200000
+ 32248 words of font info for 110 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,9n,28p,3014b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
-<d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/CTEX/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmbx9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/
-CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/CTEX/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr12.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr17.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/CTEX/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/CTEX/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmr8.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on 序列组装.pdf (10 pages, 632014 bytes).
+ 29i,9n,30p,3014b,876s stack positions out of 5000i,500n,10000p,200000b,50000s
+<d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/
+chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTe
+X/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun
+.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truety
+pe/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/
+CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/sim
+sun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/tru
+etype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CT
+EX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/
+simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/
+truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:
+/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chine
+se/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fon
+ts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf>
+<d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/ch
+inese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/
+fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.t
+tf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype
+/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CT
+eX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsu
+n.ttf><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/CTEX/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmbx9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+<d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/CTEX/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr12.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmr6.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/CTEX/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/CTEX/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmr9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+>
+Output written on 序列组装.pdf (10 pages, 756663 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
+ 313 PDF objects out of 1000 (max. 8388607)
  32 named destinations out of 1000 (max. 500000)
  92 words of extra memory for PDF output out of 10000 (max. 10000000)
 

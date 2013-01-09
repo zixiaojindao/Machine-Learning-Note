@@ -3,23 +3,28 @@
 \usepackage{graphicx}
 \usepackage{multirow}
 \usepackage{color}
-\usepackage[citecolor=black,linkcolor=black,urlcolor=blue,colorlinks=true]{hyperref}
+\usepackage{CJK}
+\usepackage[citecolor=black,linkcolor=black,urlcolor=blue,colorlinks=true,CJKbookmarks]{hyperref}
 
-\title{De novo Sequence Assembly of Second Generation Sequence Review}
-\author{Sun Zhao}
 
 \begin{document}
+\begin{CJK*}{GBK}{song}
+\title{第二代高通量测序组装综述}
+\author{孙钊}
 \maketitle
 \newpage
 
 \begin{abstract}
-第二代高通量测序
+第二代高通量测序产生了大规模的短序列。大规模输入，指数级的序列重叠，高概率的序列重复使得早期基于``overlap-layout-consensus"的方法不再适用。新的基于de bruijn图的方法在短序列组装中取得了成功。本文以一个纯计算机专业的学生的角度阐述了第二代高通量测序方法，序列组装的挑战以及如何进行序列组装的问题。在文末描述了我自己序列组装领域做出的一些努力。
+%Second-generation high-throughput sequencing methods generates large quantity short reads. Challenges including large scale input, exponential overlap among reads, high possibility of repeat sequence make early methods based on ``overlap-layout-consensus" working badly. New methods dependent on de bruijn graph approach succeeds for short reads. This article presents the methods of second generation sequencing, challenges for sequence assembly, how to assemble sequence in a pure computer science student's perspective. At last, my own contributions to sequence assembly are presented.
 \end{abstract}
 
-\section{Before Everything}
-I would like to first explain the motivation of this article at the beginning. The theme of this article is about sequence assembly which is a computer aided process for constructing gene sequence. It is actually belonging to the scope of bioinformatics. As a pure computer science student, I have started researching in this field since the summer in 2010. After reading lots of papers, discussing with biology researchers from China as well as foreign ones, trying kinds of bioinformatic tools, I approached nothing new but valuable experiences of it. In this article, I will answer the questions of ``what is gene sequencing", ``what is sequence assembly and its challenge", ``how to assembly sequence", ``how to evaluate sequence assembly softwares" and my own contribution to sequence assembly in a computer science researcher's perspective. I'am not going to tell the deep details but giving initiations about what to do and how to do about sequence assembly. Moreover, I will provide valuable references of related papers and materials to help you get a full view of sequence assembly.
-\section{What is gene sequencing}
-In genetics and biochemistry, sequencing means to determine the primary structure of an unbranched biopolymer. The biopolymer can be DNA, RNA, protein. In this article, I will focus on DNA and RNA sequence analysis excluding protein. DNA sequencing is the process of determining the nucleotide order of a given DNA chain. Concretely, DNA is a chain of four types nucleotide, represented by letter of `A', `G', `C', `T'. DNA sequencing is trying to produce the corresponding string of `A', `G', `C', `T' for a sample DNA chain. However, the most popular biology sequencing method called shot gun, randomly cut the original DNA chain into fragments and a set of `A', `G', `C', `T' strings. Each nucleotide string which is the sequence of a fragment is called a read. To increase the read coverage and read quality, copies of DNA made by PCR amplification with a typical bacteria template are sequenced. Fig. \ref{shot_gun_method} shows the shot gun process, and you may find that reads are sequenced from the two ends of DNA fragments instead of the complete one. The end sequencing phenomena is caused by biology sequencing methods, however, if particular reaction and methods are included, the distance between the two ends can be estimated. In this case, the two end reads are called pair-end reads and the distance is called insert length.\\
+\section{开始之前}
+首先我想解释一下我写这篇文章的动机。这篇文章的主题是关于基因工程的计算机辅助过程--序列组装。序列组装实际上是生物信息学的范畴。作为一个纯计算机背景的学生，我在2010年的夏天开始在这个领域进行研究。在读了大量的相关领域论文，与国内外的生物科研人员充分交流，尝试了各种各样的生物信息学中的工具之后，我没有取得任何创新性的成果，但是获得了非常宝贵的领域经验，并希望与那些对该领域一无所知又徘徊在领域门口的计算机的学生分享这些经验。本文我讲逐一回答``什么是基因测序",``什么是序列组装以及它的挑战", ``如何组装序列", ``如何评价组装软件"这些问题，以及在最后列举我个人在这个领域做出的一些努力。本文中，我不会涉及太多算法的细节，我主要的目的是给读者一些关于基因序列组转中``做什么"和``如何做"的直觉印象，并且，我会提供大量的相关文章，材料和链接来帮助你构建一个完整的领域框架。
+%I would like to first explain the motivation of this article at the beginning. The theme of this article is about sequence assembly which is a computer aided process for constructing gene sequence. It is actually belonging to the scope of bioinformatics. As a pure computer science student, I have started researching in this field since the summer in 2010. After reading lots of papers, discussing with biology researchers from China as well as foreign ones, trying kinds of bioinformatic tools, I approached nothing new but valuable experiences of it. In this article, I will answer the questions of ``what is gene sequencing", ``what is sequence assembly and its challenge", ``how to assembly sequence", ``how to evaluate sequence assembly softwares" and my own contribution to sequence assembly in a computer science researcher's perspective. I'am not going to tell the deep details but giving initiations about what to do and how to do about sequence assembly. Moreover, I will provide valuable references of related papers and materials to help you get a full view of sequence assembly.
+\section{什么是基因测序}
+在基因工程和生物化学领域，测序意味着确定无支链生物聚合物的一级结构。
+%In genetics and biochemistry, sequencing means to determine the primary structure of an unbranched biopolymer. The biopolymer can be DNA, RNA, protein. In this article, I will focus on DNA and RNA sequence analysis excluding protein. DNA sequencing is the process of determining the nucleotide order of a given DNA chain. Concretely, DNA is a chain of four types nucleotide, represented by letter of `A', `G', `C', `T'. DNA sequencing is trying to produce the corresponding string of `A', `G', `C', `T' for a sample DNA chain. However, the most popular biology sequencing method called shot gun, randomly cut the original DNA chain into fragments and a set of `A', `G', `C', `T' strings. Each nucleotide string which is the sequence of a fragment is called a read. To increase the read coverage and read quality, copies of DNA made by PCR amplification with a typical bacteria template are sequenced. Fig. \ref{shot_gun_method} shows the shot gun process, and you may find that reads are sequenced from the two ends of DNA fragments instead of the complete one. The end sequencing phenomena is caused by biology sequencing methods, however, if particular reaction and methods are included, the distance between the two ends can be estimated. In this case, the two end reads are called pair-end reads and the distance is called insert length.\\
 \begin{figure}[ht]
   \centering
   % Requires \usepackage{graphicx}
@@ -170,4 +175,5 @@ In a programmer's perspective, sequence assembly is piecing string fragments int
 \renewcommand\refname{Reference}
 \bibliographystyle{plain}
 \bibliography{Thesis}
+\end{CJK*}
 \end{document}

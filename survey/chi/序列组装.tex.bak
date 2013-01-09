@@ -3,6 +3,7 @@
 \usepackage{graphicx}
 \usepackage{multirow}
 \usepackage{color}
+\usepackage{ckg}
 \usepackage[citecolor=black,linkcolor=black,urlcolor=blue,colorlinks=true]{hyperref}
 
 \title{De novo Sequence Assembly of Second Generation Sequence Review}
@@ -13,7 +14,7 @@
 \newpage
 
 \begin{abstract}
-Second-generation high-throughput sequencing methods generates large quantity short reads. Challenges including large scale input, exponential overlap among reads, high possibility of repeat sequence make early methods based on ``overlap-layout-consensus" working badly. New methods dependent on de bruijn graph approach succeeds for short reads. This article presents the methods of second generation sequencing, challenges for sequence assembly, how to assemble sequence in a pure computer science student's perspective. At last, my own contributions to sequence assembly are presented.
+第二代高通量测序
 \end{abstract}
 
 \section{Before Everything}
