@@ -1,3 +1,110 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
+
+\bibitem{altschul1990basic}
+S.F. Altschul, W.~Gish, W.~Miller, E.W. Myers, D.J. Lipman, et~al.
+\newblock Basic local alignment search tool.
+\newblock {\em Journal of molecular biology}, 215(3):403--410, 1990.
+
+\bibitem{bentley2006whole}
+D.R. Bentley.
+\newblock Whole-genome re-sequencing.
+\newblock {\em Current opinion in genetics \& development}, 16(6):545--552,
+  2006.
+
+\bibitem{butler2008allpaths}
+J.~Butler, I.~MacCallum, M.~Kleber, I.A. Shlyakhter, M.K. Belmonte, E.S.
+  Lander, C.~Nusbaum, and D.B. Jaffe.
+\newblock Allpaths: De novo assembly of whole-genome shotgun microreads.
+\newblock {\em Genome research}, 18(5):810--820, 2008.
+
+\bibitem{grabherr2011full}
+M.G. Grabherr, B.J. Haas, M.~Yassour, J.Z. Levin, D.A. Thompson, I.~Amit,
+  X.~Adiconis, L.~Fan, R.~Raychowdhury, Q.~Zeng, et~al.
+\newblock Full-length transcriptome assembly from rna-seq data without a
+  reference genome.
+\newblock {\em Nature biotechnology}, 29(7):644--652, 2011.
+
+\bibitem{henschel2012trinity}
+R.~Henschel, P.M. Nista, M.~Lieber, B.J. Haas, L.S. Wu, and R.D. LeDuc.
+\newblock Trinity rna-seq assembler performance optimization.
+\newblock In {\em Proceedings of the 1st Conference of the Extreme Science and
+  Engineering Discovery Environment: Bridging from the eXtreme to the campus
+  and beyond}, page~45. ACM, 2012.
+
+\bibitem{hernandez2008novo}
+D.~Hernandez, P.~Fran{\c{c}}ois, L.~Farinelli, M.~{\O}ster{\aa}s, and
+  J.~Schrenzel.
+\newblock De novo bacterial genome sequencing: millions of very short reads
+  assembled on a desktop computer.
+\newblock {\em Genome research}, 18(5):802--809, 2008.
+
+\bibitem{idury1995new}
+R.M. Idury and M.S. Waterman.
+\newblock A new algorithm for dna sequence assembly.
+\newblock {\em Journal of Computational Biology}, 2(2):291--306, 1995.
+
+\bibitem{kent2002blat}
+W.J. Kent.
+\newblock Blat—the blast-like alignment tool.
+\newblock {\em Genome research}, 12(4):656--664, 2002.
+
+\bibitem{li2010novo}
+R.~Li, H.~Zhu, J.~Ruan, W.~Qian, X.~Fang, Z.~Shi, Y.~Li, S.~Li, G.~Shan,
+  K.~Kristiansen, et~al.
+\newblock De novo assembly of human genomes with massively parallel short read
+  sequencing.
+\newblock {\em Genome research}, 20(2):265--272, 2010.
+
+\bibitem{mardis2008impact}
+E.R. Mardis et~al.
+\newblock The impact of next-generation sequencing technology on genetics.
+\newblock {\em Trends in genetics}, 24(3):133, 2008.
+
+\bibitem{margulies2005genome}
+M.~Margulies, M.~Egholm, W.E. Altman, S.~Attiya, J.S. Bader, L.A. Bemben,
+  J.~Berka, M.S. Braverman, Y.J. Chen, Z.~Chen, et~al.
+\newblock Genome sequencing in microfabricated high-density picolitre reactors.
+\newblock {\em Nature}, 437(7057):376--380, 2005.
+
+\bibitem{myers1995toward}
+E.W. Myers.
+\newblock Toward simplifying and accurately formulating fragment assembly.
+\newblock {\em Journal of Computational Biology}, 2(2):275--290, 1995.
+
+\bibitem{robertson2010novo}
+G.~Robertson, J.~Schein, R.~Chiu, R.~Corbett, M.~Field, S.D. Jackman,
+  K.~Mungall, S.~Lee, H.M. Okada, J.Q. Qian, et~al.
+\newblock De novo assembly and analysis of rna-seq data.
+\newblock {\em Nature methods}, 7(11):909--912, 2010.
+
+\bibitem{sanger1977nucleotide}
+F.~Sanger, GM~Air, BG~Barrell, NL~Brown, AR~Coulson, JC~Fiddes, PM~Slocombe,
+  and M.~Smith.
+\newblock Nucleotide sequence of bacteriophage (d x174 dna.
+\newblock 1977.
+
+\bibitem{schulz2012oases}
+M.H. Schulz, D.R. Zerbino, M.~Vingron, and E.~Birney.
+\newblock Oases: robust de novo rna-seq assembly across the dynamic range of
+  expression levels.
+\newblock {\em Bioinformatics}, 28(8):1086--1092, 2012.
+
+\bibitem{simpson2009abyss}
+J.T. Simpson, K.~Wong, S.D. Jackman, J.E. Schein, S.J.M. Jones, and
+  {\.I}.~Birol.
+\newblock Abyss: a parallel assembler for short read sequence data.
+\newblock {\em Genome research}, 19(6):1117--1123, 2009.
+
+\bibitem{zerbino2008velvet}
+D.R. Zerbino and E.~Birney.
+\newblock Velvet: algorithms for de novo short read assembly using de bruijn
+  graphs.
+\newblock {\em Genome research}, 18(5):821--829, 2008.
+
+\bibitem{zhao2011optimizing}
+Q.Y. Zhao, Y.~Wang, Y.M. Kong, D.~Luo, X.~Li, and P.~Hao.
+\newblock Optimizing de novo transcriptome assembly from short-read rna-seq
+  data: a comparative study.
+\newblock {\em BMC bioinformatics}, 12(Suppl 14):S2, 2011.
 
 \end{thebibliography}

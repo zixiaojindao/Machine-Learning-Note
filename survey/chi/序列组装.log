@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  9 JAN 2013 11:33
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  9 JAN 2013 17:43
 entering extended mode
 **D:/course/note/survey/chi/Â∫èÂàóÁªÑË£Ö.tex
 (D:/course/note/survey/chi/Â∫èÂàóÁªÑË£Ö.tex
@@ -321,195 +321,161 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {d:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
-<Figure1.jpg, id=50, 660.96938pt x 145.29282pt>
+<Figure1.jpg, id=51, 660.96938pt x 145.29282pt>
 File: Figure1.jpg Graphic file (type jpg)
  <use Figure1.jpg>
-Package pdftex.def Info: Figure1.jpg used on input line 31.
+Package pdftex.def Info: Figure1.jpg used on input line 32.
 (pdftex.def)             Requested size: 227.62204pt x 50.03517pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--37
+
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 36.
+(Font)              <7> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 36.
- [2 <D:/course/note/survey/chi/Figure1.jpg>]
-
-LaTeX Warning: Citation `sanger1977nucleotide' on page 3 undefined on input lin
-e 43.
-
-
-LaTeX Warning: Citation `mardis2008impact' on page 3 undefined on input line 43
-.
-
-
-LaTeX Warning: Citation `margulies2005genome' on page 3 undefined on input line
- 43.
-
-
-LaTeX Warning: Citation `bentley2006whole' on page 3 undefined on input line 43
-.
-
-<Figure2.jpg, id=85, 734.745pt x 231.11343pt>
+(Font)              <5> on input line 38.
+[2] <Figure2.jpg, id=89, 734.745pt x 231.11343pt>
 File: Figure2.jpg Graphic file (type jpg)
  <use Figure2.jpg>
-Package pdftex.def Info: Figure2.jpg used on input line 50.
+Package pdftex.def Info: Figure2.jpg used on input line 56.
 (pdftex.def)             Requested size: 284.52756pt x 89.4991pt.
 
-<Figure3.jpg, id=86, 402.75468pt x 67.0003pt>
+<Figure3.jpg, id=90, 402.75468pt x 67.0003pt>
 File: Figure3.jpg Graphic file (type jpg)
  <use Figure3.jpg>
-Package pdftex.def Info: Figure3.jpg used on input line 56.
+Package pdftex.def Info: Figure3.jpg used on input line 62.
 (pdftex.def)             Requested size: 284.52756pt x 47.33232pt.
 
-Overfull \hbox (2.19513pt too wide) in paragraph at lines 43--59
-\OT1/cmr/m/n/10 for-mat file con-sist-ing string of de-scrip-tion, read and qua
-l-i-ty(only ex-ist-s in FASTQ
+Overfull \hbox (12.80568pt too wide) in paragraph at lines 45--66
+\C19/song/m/n/10/37 ˇ \C19/song/m/n/10/60 S \C19/song/m/n/10/41 ê { \C19/song/m
+/n/10/43 ⁄ \C19/song/m/n/10/52 ≤ \C19/song/m/n/10/57  \C19/song/m/n/10/55 ¥ \C
+19/song/m/n/10/56 ë \C19/song/m/n/10/65 X \C19/song/m/n/10/55 û \C19/song/m/n/1
+0/45 m \C19/song/m/n/10/40  \C19/song/m/n/10/41 u \C19/song/m/n/10/63 – \C19/s
+ong/m/n/10/41  u \C19/song/m/n/10/63 – \C19/song/m/n/10/40  \C19/song/m/n/10/
+25 " \C19/song/m/n/10/40 1 \C19/song/m/n/10/61 ò \C19/song/m/n/10/39 ì \C19/son
+g/m/n/10/37 ˇ \C19/song/m/n/10/60 S \C19/song/m/n/10/52 ≤ \C19/song/m/n/10/57 
+ \C19/song/m/n/10/40  \C19/song/m/n/10/39 ì \C19/song/m/n/10/37 L \C19/song/m/
+n/10/55 ¥\OT1/cmr/m/n/10 Sanger[[]],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-
+Overfull \hbox (37.50023pt too wide) in paragraph at lines 45--66
+\C19/song/m/n/10/60 S \C19/song/m/n/10/45 E \C19/song/m/n/10/55 ‚ \C19/song/m/n
+/10/61 Æ \C19/song/m/n/10/46 ≤ \C19/song/m/n/10/38 — \C19/song/m/n/10/59 y\OT1/
+cmr/m/n/10 [[]]\C19/song/m/n/10/25 " \C19/song/m/n/10/61 Æ \C19/song/m/n/10/46 
+≤ \C19/song/m/n/10/47 å \C19/song/m/n/10/61 ± \C19/song/m/n/10/54 ˚ \C19/song/m
+/n/10/61 í \C19/song/m/n/10/62 A ^ \C19/song/m/n/10/40  1 \C19/song/m/n/10/41 
+ \C19/song/m/n/10/39 ì \C19/song/m/n/10/37 ˇ \C19/song/m/n/10/60 S \C19/song/m
+/n/10/52 ≤ \C19/song/m/n/10/57  \C19/song/m/n/10/62 k\OT1/cmr/m/n/10 454\C19/s
+ong/m/n/10/37 ˇ \C19/song/m/n/10/60 S \C19/song/m/n/10/61 §\OT1/cmr/m/n/10 [[]]
+\C19/song/m/n/10/26 ß\OT1/cmr/m/n/10 Illumina\C19/song/m/n/10/37 ˇ
  []
 
-[3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 62.
- (d:\CTEX\MiKTeX\tex\latex\base\omscmr.fd
+
+Overfull \hbox (12.1113pt too wide) in paragraph at lines 45--66
+\C19/song/m/n/10/37 ˇ \C19/song/m/n/10/60 S  \C19/song/m/n/10/52 ° \C19/song/m
+/n/10/36 r \C19/song/m/n/10/55 — \C19/song/m/n/10/38 — \C19/song/m/n/10/40 \OT
+1/cmr/m/n/10 read\C19/song/m/n/10/60 S \C19/song/m/n/10/49  \C19/song/m/n/10/3
+7  \C19/song/m/n/10/39  \C19/song/m/n/10/63 3 \C19/song/m/n/10/62 ^\OT1/cmr/m
+/n/10 FASTA\C19/song/m/n/10/44 Ω \C19/song/m/n/10/63 ˆ\OT1/cmr/m/n/10 FASTQ\C19
+/song/m/n/10/42 Ç \C19/song/m/n/10/55 ™ \C19/song/m/n/10/40  \C19/song/m/n/10/
+58 © \C19/song/m/n/10/45 á \C19/song/m/n/10/64 • \C19/song/m/n/10/25 "\OT1/cmr/
+m/n/10 FASTA\C19/song/m/n/10/42 Ç
+ []
+
+
+Overfull \hbox (5.83351pt too wide) in paragraph at lines 45--66
+\C19/song/m/n/10/65 o \C19/song/m/n/10/64 É \C19/song/m/n/10/40 1 \C19/song/m/n
+/10/41  \C19/song/m/n/10/39 ì \C19/song/m/n/10/37 ˇ \C19/song/m/n/10/60 S \C19
+/song/m/n/10/52 ≤ \C19/song/m/n/10/57  \C19/song/m/n/10/40 È\OT1/cmr/m/n/10 DN
+A\C19/song/m/n/10/44 Ω\OT1/cmr/m/n/10 RNA\C19/song/m/n/10/46 ? \C19/song/m/n/10
+/60 1 \C19/song/m/n/10/37 ˇ \C19/song/m/n/10/60 S \C19/song/m/n/10/26 ß \C19/so
+ng/m/n/10/55 — \C19/song/m/n/10/38 — \C19/song/m/n/10/49 
+ \C19/song/m/n/10/61 ò \C19/song/m/n/10/42 á \C19/song/m/n/10/62 ^\OT1/cmr/m/n/
+10 FASTA\C19/song/m/n/10/44 Ω\OT1/cmr/m/n/10 FASTQ\C19/song/m/n/10/58 ©
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 70.
+(d:\CTEX\MiKTeX\tex\latex\base\omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
-
-<Figure4.jpg, id=97, 660.96938pt x 188.20313pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
+ [3 <D:/course/note/survey/chi/Figure1.jpg>] <Figure4.jpg, id=104, 660.96938pt 
+x 188.20313pt>
 File: Figure4.jpg Graphic file (type jpg)
  <use Figure4.jpg>
-Package pdftex.def Info: Figure4.jpg used on input line 73.
+Package pdftex.def Info: Figure4.jpg used on input line 89.
 (pdftex.def)             Requested size: 284.52756pt x 81.01765pt.
- [4 <D:/course/note/survey/chi/Figure2.jpg> <D:/course/note/survey/chi/Figure3.
-jpg>]
 
-LaTeX Warning: Citation `myers1995toward' on page 5 undefined on input line 79.
-
-
-
-LaTeX Warning: Citation `hernandez2008novo' on page 5 undefined on input line 7
-9.
-
-
-LaTeX Warning: Citation `idury1995new' on page 5 undefined on input line 79.
-
-<Figure5.jpg, id=105, 536.75531pt x 349.305pt>
+[4 <D:/course/note/survey/chi/Figure2.jpg> <D:/course/note/survey/chi/Figure3.j
+pg> <D:/course/note/survey/chi/Figure4.jpg>]
+<Figure5.jpg, id=116, 536.75531pt x 349.305pt>
 File: Figure5.jpg Graphic file (type jpg)
  <use Figure5.jpg>
-Package pdftex.def Info: Figure5.jpg used on input line 88.
+Package pdftex.def Info: Figure5.jpg used on input line 104.
 (pdftex.def)             Requested size: 284.52756pt x 185.16273pt.
 
-<Figure6.jpg, id=106, 1224.07312pt x 409.53pt>
+<Figure6.jpg, id=117, 1224.07312pt x 409.53pt>
 File: Figure6.jpg Graphic file (type jpg)
  <use Figure6.jpg>
-Package pdftex.def Info: Figure6.jpg used on input line 94.
+Package pdftex.def Info: Figure6.jpg used on input line 110.
 (pdftex.def)             Requested size: 284.52756pt x 95.18974pt.
 
-
-LaTeX Warning: Citation `zerbino2008velvet' on page 5 undefined on input line 9
-7.
-
-
-LaTeX Warning: Citation `simpson2009abyss' on page 5 undefined on input line 97
-.
-
-
-LaTeX Warning: Citation `butler2008allpaths' on page 5 undefined on input line 
-97.
-
-
-LaTeX Warning: Citation `li2010novo' on page 5 undefined on input line 97.
-
-
-Overfull \hbox (45.13972pt too wide) in paragraph at lines 120--133
+Overfull \hbox (45.13972pt too wide) in paragraph at lines 136--149
  [] 
  []
 
-[5 <D:/course/note/survey/chi/Figure4.jpg>] [6 <D:/course/note/survey/chi/Figur
-e5.jpg> <D:/course/note/survey/chi/Figure6.jpg>] [7]
-
-LaTeX Warning: Citation `schulz2012oases' on page 8 undefined on input line 142
-.
-
-
-LaTeX Warning: Citation `robertson2010novo' on page 8 undefined on input line 1
-42.
-
-
-LaTeX Warning: Citation `grabherr2011full' on page 8 undefined on input line 14
-2.
-
-
-LaTeX Warning: Citation `zhao2011optimizing' on page 8 undefined on input line 
-142.
-
-
-LaTeX Warning: Citation `henschel2012trinity' on page 8 undefined on input line
- 142.
-
-<Figure7.jpg, id=131, 423.08063pt x 133.24782pt>
+[5] [6 <D:/course/note/survey/chi/Figure5.jpg> <D:/course/note/survey/chi/Figur
+e6.jpg>] [7] <Figure7.jpg, id=159, 423.08063pt x 133.24782pt>
 File: Figure7.jpg Graphic file (type jpg)
- <use Figure7.jpg>
-Package pdftex.def Info: Figure7.jpg used on input line 146.
+
+<use Figure7.jpg>
+Package pdftex.def Info: Figure7.jpg used on input line 162.
 (pdftex.def)             Requested size: 284.52756pt x 89.61307pt.
 
-Overfull \hbox (4.30417pt too wide) in paragraph at lines 150--150
+Overfull \hbox (4.30417pt too wide) in paragraph at lines 166--166
 [][][]\OT1/cmr/m/n/8 http://sourceforge.net/apps/mediawiki/dnaa/index.php?title
 =Whole[]Genome[]Simulation| 
  []
 
 
-LaTeX Warning: Citation `altschul1990basic' on page 8 undefined on input line 1
-50.
-
-
-LaTeX Warning: Citation `kent2002blat' on page 8 undefined on input line 150.
-
-
-Overfull \hbox (6.13977pt too wide) in paragraph at lines 150--151
+Overfull \hbox (6.13977pt too wide) in paragraph at lines 166--167
 \OT1/cmr/m/n/10 p://ftp.ncbi.nlm.nih.gov/refseq/[][], [][]ft-p://ftp.ncbi.nlm.n
 ih.gov/genomes/[][] or NCBI's
  []
 
 
-Overfull \hbox (2.38043pt too wide) in paragraph at lines 150--151
+Overfull \hbox (2.38043pt too wide) in paragraph at lines 166--167
 \OT1/cmr/m/n/10 ref-se-q is ex-plained on [][]http://www.ncbi.nlm.nih.gov/books
 /NBK50679/[][]. NCBI's
  []
 
 [8 <D:/course/note/survey/chi/Figure7.jpg>]
-Overfull \hbox (90.47322pt too wide) in paragraph at lines 156--171
+Overfull \hbox (90.47322pt too wide) in paragraph at lines 172--187
  [] 
  []
 
-(D:\course\note\survey\chi\Â∫èÂàóÁªÑË£Ö.bbl [9]
+(D:\course\note\survey\chi\Â∫èÂàóÁªÑË£Ö.bbl [9] [10])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
+ [11]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
- (D:\course\note\survey\chi\Â∫èÂàóÁªÑË£Ö.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
+(D:\course\note\survey\chi\Â∫èÂàóÁªÑË£Ö.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
 Package rerunfilecheck Info: File `Â∫èÂàóÁªÑË£Ö.out' has not changed.
-(rerunfilecheck)             Checksum: 5F4F9BE832267FD24449F549C4012E34;374.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 565F06A90B135BD9D007A188C76CB018;363.
  ) 
 Here is how much of TeX's memory you used:
- 6362 strings out of 495354
- 89693 string characters out of 3183858
- 183582 words of memory out of 3000000
- 9413 multiletter control sequences out of 15000+200000
- 32248 words of font info for 110 fonts, out of 3000000 for 9000
+ 6588 strings out of 495354
+ 94283 string characters out of 3183858
+ 197017 words of memory out of 3000000
+ 9617 multiletter control sequences out of 15000+200000
+ 33761 words of font info for 115 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,9n,30p,3014b,876s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,9n,30p,3014b,946s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/
 chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTe
 X/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun
@@ -530,18 +496,19 @@ fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.t
 tf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype
 /chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CT
 eX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsu
-n.ttf><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/CTEX/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/CTEX/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmbx9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-<d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/CTEX/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr12.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmr6.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/CTEX/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/CTEX/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmr9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
->
-Output written on Â∫èÂàóÁªÑË£Ö.pdf (10 pages, 756663 bytes).
+n.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truet
+ype/chinese/simsun.ttf><d:/CTEX/CTeX/fonts/truetype/chinese/simsun.ttf><d:/CTEX
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/CTEX/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmbx9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
+10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/CTEX/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/CTEX/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr6.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/
+CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/CTEX/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Â∫èÂàóÁªÑË£Ö.pdf (11 pages, 815361 bytes).
 PDF statistics:
- 313 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
  92 words of extra memory for PDF output out of 10000 (max. 10000000)
 
