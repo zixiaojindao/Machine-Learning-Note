@@ -175,7 +175,7 @@
 }
 
 @article{kent2002blat,
-  title={BLAT-The BLAST-like alignment tool},
+  title={BLAT—the BLAST-like alignment tool},
   author={Kent, W.J.},
   journal={Genome research},
   volume={12},
@@ -184,3 +184,4 @@
   year={2002},
   publisher={Cold Spring Harbor Lab}
 }
+
