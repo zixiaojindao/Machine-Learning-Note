@@ -2,7 +2,8 @@
 
 \usepackage{graphicx}
 \usepackage{multirow}
-
+\usepackage{color}
+\usepackage[citecolor=black,linkcolor=black,urlcolor=blue,colorlinks=true]{hyperref}
 \title{Note: Logistic Regression}
 \author{Sun Zhao}
 
@@ -11,7 +12,7 @@
 \newpage
 
 \section{Classification}
-In classification problem, we will predict the label for the given data instead of continuous values like regression problem. For example, a classifier may automatically label an email as spam or not spam, an online transaction fraudulent or not fraudulent, or a tumor malignant or benign. In the simplest case, there are only two classes. Usually, we use 0 and 1 to denote the negative class and the positive class separately. Figure\ref{classification_example} shows a training data set of tumor classification. When using linear regression algorithm and exclude blue cross example, we get a hypothesis of purple line. Naturally, we define 0.5 as the boundary of malignant or benign, ie, if the hypothesis h(x) is equal to or greater than 0.5, then x is malignant, otherwise benign. Let $h(x_{0})$ = 0.5, then if x >= $x_{0}$, x is malignant, otherwise benign. In this case, we get a perfect classifier. However, if the blue cross is included, we may get a hypothesis of green line. And let $h(x_{1})$ = 0.5, obviously, $x_{1}$ is worth than $x_{0}$ when classifying tumors. This is because in the binary classification problem, the value of y is always 0 or 1, but the output of linear regression can be larger than 1 or smaller than 0. Logistic regression will use a hypothesis $h_{\theta}(x)$ whose output is always between 0 and 1.
+In classification problem, we will predict the label for the given data instead of continuous values like regression problem. For example, a classifier may automatically label an email as spam or not spam, an online transaction fraudulent or not fraudulent, or a tumor malignant or benign. In the simplest case, there are only two classes. Usually, we use 0 and 1 to denote the negative class and the positive class separately. Fig. \ref{classification_example} shows a training data set of tumor classification. When using linear regression algorithm and exclude blue cross example, we get a hypothesis of purple line. Naturally, we define 0.5 as the boundary of malignant or benign, ie, if the hypothesis h(x) is equal to or greater than 0.5, then x is malignant, otherwise benign. Let $h(x_{0})$ = 0.5, then if x $>=$ $x_{0}$, x is malignant, otherwise benign. In this case, we get a perfect classifier. However, if the blue cross is included, we may get a hypothesis of green line. And let $h(x_{1})$ = 0.5, obviously, $x_{1}$ is worth than $x_{0}$ when classifying tumors. This is because in the binary classification problem, the value of y is always 0 or 1, but the output of linear regression can be larger than 1 or smaller than 0. Logistic regression will use a hypothesis $h_{\theta}(x)$ whose output is always between 0 and 1.
 
 \begin{figure}[ht]
   \centering
@@ -21,17 +22,17 @@ In classification problem, we will predict the label for the given data instead 
 \end{figure}
 
 \section{Hypothesis Representation}
-How to control the output of our hypothesis between 0 and 1? The answer is using a sigmoid function shown in (\ref{sigmoid_function}). The sigmoid function plotted in Figure\ref{sigmoid_function_plotting} maps an interval of (-$\infty, \infty$) to (0, 1). Combining the sigmoid function and hypothesis function $h_{\theta}(x) = \theta^{T}x$, we will get the hypothesis function of logistic regression shown in (\ref{logistic_regression_hypothesis}). The output of the new hypothesis $h_{\theta}(x)$  means the probability that y = 1 on input of x. For example, in the tumor classification problem, if $h_{\theta}(x_{0}) = 0.7$, then we can tell the patient whose tumor size is equal to $x_{0}$ that there are 70\% chance that her/his tumor to be malignant. Formally, the hypothesis predicts the probability of x being positive class given x and $\theta$. This definition is described in (\ref{hypothesis_probability_definition}), and obviously, we can induce a property shown in (\ref{probalility_property}).
+How to control the output of our hypothesis between 0 and 1? The answer is using a sigmoid function shown in (\ref{sigmoid_function}). The sigmoid function plotted in Fig. \ref{sigmoid_function_plotting} maps an interval of (-$\infty, \infty$) to (0, 1). Combining the sigmoid function and hypothesis function $h_{\Theta}(x) = \Theta^{T}x$, we will get the hypothesis function of logistic regression shown in (\ref{logistic_regression_hypothesis}). The output of the new hypothesis $h_{\Theta}(x)$  means the probability that y = 1 on input of x. For example, in the tumor classification problem, if $h_{\Theta}(x_{0}) = 0.7$, then we can tell the patient whose tumor size is equal to $x_{0}$ that there are 70\% chance that her/his tumor to be malignant. Formally, the hypothesis predicts the probability of x being positive class given x and $\Theta$. This definition is described in (\ref{hypothesis_probability_definition}), and obviously, we can induce a property shown in (\ref{probalility_property}).
 \begin{equation}\label{sigmoid_function}
 Sigmoid(x) = \frac{1}{1 + e^{-x}}
 \end{equation}
 
 \begin{equation}\label{logistic_regression_hypothesis}
-h_{\theta}(x) = \frac{1}{1 + e^{-\theta^{T}x}}
+h_{\Theta}(x) = \frac{1}{1 + e^{-\Theta^{T}x}}
 \end{equation}
 
 \begin{equation}\label{hypothesis_probability_definition}
-h_{\theta}(x) = P(y = 1|x;\theta)
+h_{\Theta}(x) = P(y = 1|x;\Theta)
 \end{equation}
 
 \begin{equation}\label{probalility_property}
@@ -46,7 +47,7 @@ P(y = 0|x;\theta) + P(y = 1|x;\theta) = 1
 \end{figure}
 
 \section{Decision Boundary}
-Because we judge a sample x whether is positive class by checking whether its hypothesis value $h_{\theta}(x)$ equal to or greater than 0.5, and note Sigmoid(0) = 0.5, we can use the condition that whether $\theta^{T}x$ is equal to or greater than 0 to decide its class. If we plot the examples and hypothesis function when given $\theta$, we will find that $\theta^{T}x$ = 0 defines the decision boundary between two classes. Figure\ref{decision_boundary} shows two decision boundaries. In Figure\ref{decision_boundary}A, all positive examples are from the up-right direction of the decision line, and in Figure\ref{decision_boundary}B, they are all from the outside direction of the decision circle.
+Because we judge a sample x whether is positive class by checking whether its hypothesis value $h_{\Theta}(x)$ equal to or greater than 0.5, and note Sigmoid(0) = 0.5, we can use the condition that whether $\Theta^{T}x$ is equal to or greater than 0 to decide its class. If we plot the examples and hypothesis function when given $\Theta$, we will find that $\Theta^{T}x$ = 0 defines the decision boundary between two classes. Fig. \ref{decision_boundary} shows two decision boundaries. In Fig. \ref{decision_boundary}A, all positive examples are from the up-right direction of the decision line, and in Fig. \ref{decision_boundary}B, they are all from the outside direction of the decision circle.
 
 \begin{figure}[ht]
   \centering
@@ -56,17 +57,17 @@ Because we judge a sample x whether is positive class by checking whether its hy
 \end{figure}
 
 \section{Cost Function}
-Now we have the logistic regression hypothesis shown in (\ref{logistic_regression_hypothesis}), if we use square error cost function as linear regression, the cost function is much complicated and non-convex, hence the gradient descent algorithm may not converge with a global optima. To ensure a convex cost function, we define the cost between $h_{\theta}(x)$ and y as $Cost(h_{\theta}(x), y)$ shown in (\ref{logistic_regression_example_cost_function}).
+Now we have the logistic regression hypothesis shown in (\ref{logistic_regression_hypothesis}), if we use square error cost function as linear regression, the cost function is much complicated and non-convex, hence the gradient descent algorithm may not converge with a global optima. To ensure a convex cost function, we define the cost between $h_{\Theta}(x)$ and y as $Cost(h_{\Theta}(x), y)$ shown in (\ref{logistic_regression_example_cost_function}).
 
 \begin{equation}\label{logistic_regression_example_cost_function}
-Cost(h_{\theta}(x), y) = \left\{ \begin{array}{ll}
--log(h_{\theta}(x)) & \textrm{if y = 1}\\
--log(1 - h_{\theta}(x)) & \textrm{if y = 0}\\
+Cost(h_{\Theta}(x), y) = \left\{ \begin{array}{ll}
+-log(h_{\Theta}(x)) & \textrm{if y = 1}\\
+-log(1 - h_{\Theta}(x)) & \textrm{if y = 0}\\
 \end{array} \right.
 \end{equation}
-The intuition behind the cost function is that if $h_{\theta}(x) = 0$, but y = 1 or $h_{\theta}(x) = 1$, but y = 0, we'll penalize learning algorithm by a very large cost, and if $h_{\theta}(x)$ = y, the cost is zero. Figure\ref{cost_fuction_log_plot} shows $-log(h_{\theta}(x))$ against $h_{\theta}(x)$ (when y = 1, the cost function will be $-log(h_{\theta}(x)$), and it is clear that the cost decreases as $h_{\theta}(x)$ goes 1.
+The intuition behind the cost function is that if $h_{\Theta}(x) = 0$, but y = 1 or $h_{\Theta}(x) = 1$, but y = 0, we'll penalize learning algorithm by a very large cost, and if $h_{\Theta}(x)$ = y, the cost is zero. Fig. \ref{cost_fuction_log_plot} shows $-log(h_{\Theta}(x))$ against $h_{\Theta}(x)$ (when y = 1, the cost function will be $-log(h_{\Theta}(x)$), and it is clear that the cost decreases as $h_{\Theta}(x)$ goes 1.
 \\
-Since y only equal 1 or 0, we can refine $Cost(h_{\theta}(x), y)$ in a simple form shown in (\ref{simple_logistic_regression_example_cost_function}).
+Since y only equal 1 or 0, we can refine $Cost(h_{\Theta}(x), y)$ in a simple form shown in (\ref{simple_logistic_regression_example_cost_function}).
 
 \begin{figure}[ht]
   \centering
@@ -76,14 +77,14 @@ Since y only equal 1 or 0, we can refine $Cost(h_{\theta}(x), y)$ in a simple fo
 \end{figure}
 
 \begin{equation}\label{simple_logistic_regression_example_cost_function}
-Cost(h_{\theta}(x), y) = -ylog(h_{\theta}(x)) - (1 - y)log(1 - h_{\theta}(x))
+Cost(h_{\Theta}(x), y) = -ylog(h_{\Theta}(x)) - (1 - y)log(1 - h_{\Theta}(x))
 \end{equation}
 \\
 Thus, the cost function of logistic regression becomes (\ref{logistic_regression_cost_function}).
 \begin{eqnarray}\label{logistic_regression_cost_function}
 % \nonumber to remove numbering (before each equation)
-  J(\theta) &   =   &\frac{1}{m} \sum_{i=1}^{m} Cost(h_{\theta}(x^{(i)}), y^{(i)})\\
-            &   =   &-\frac{1}{m} \sum_{i=1}^{m} y^{(i)}log(h_{\theta}(x^{(i)})) + (1 - y^{(i)})log(1 - h_{\theta}(x^{(i)}))
+  J(\theta) &   =   &\frac{1}{m} \sum_{i=1}^{m} Cost(h_{\Theta}(x^{(i)}), y^{(i)})\\
+            &   =   &-\frac{1}{m} \sum_{i=1}^{m} y^{(i)}log(h_{\Theta}(x^{(i)})) + (1 - y^{(i)})log(1 - h_{\Theta}(x^{(i)}))
 \end{eqnarray}
 
 \section{Gradient Descent}
@@ -96,7 +97,7 @@ Algorithm1: Gradient Descent for Logistic Regression
 \hrule
 \smallskip
 Repeat\{\\
-$\theta_j=\theta_j - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)}) \cdot x^{(i)}_{j}$\\
+$\Theta_j=\Theta_j - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\Theta(x^{(i)})-y^{(i)}) \cdot x^{(i)}_{j}$\\
 \}\\
 \hrule
 
@@ -107,7 +108,7 @@ Contrasting with binary classification, multiple class classification predicts m
 \item Medical diagrams: Not ill, Cold, Flu.
 \item Weather: Sunny, Cloudy, Rain, Snow.
 \end{itemize}
-The idea of One-vs-All is to train a binary logistic regression classifier $h_{\theta}^{(c)}(x)$ for each class c(treat examples belonging to c as positive class and examples not belonging to class c as negative class) to predict the probability that x is a member of class c. On a new input of x, its class is predicted as c that maximize $h_{\theta}^{(c)}(x)$.
+The idea of One-vs-All is to train a binary logistic regression classifier $h_{\Theta}^{(c)}(x)$ for each class c(treat examples belonging to c as positive class and examples not belonging to class c as negative class) to predict the probability that x is a member of class c. On a new input of x, its class is predicted as c that maximize $h_{\Theta}^{(c)}(x)$.
 
 \section{Summary}
 Logistic regression solves the classification problem. When using a sigmoid like hypothesis and logarithms cost function, the update iteration is identical to linear regression except the hypothesis. Multiple binary classifiers are trained for each class when solving multiple class classification problem.

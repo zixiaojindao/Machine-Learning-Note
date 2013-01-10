@@ -2,7 +2,8 @@
 
 \usepackage{graphicx}
 \usepackage{multirow}
-
+\usepackage{color}
+\usepackage[citecolor=black,linkcolor=black,urlcolor=blue,colorlinks=true]{hyperref}
 \title{Note: Linear Regression with Multiple Variables}
 \author{Sun Zhao}
 
@@ -12,7 +13,7 @@
 
 \section{Multiple Features}
 Univariate linear regression takes only one variable to predict values. Mostly, values are relevant to multiple features other than one feature. Multiple features are powerful than single
- feature to predict values. An example of multiple features are shown in Table\ref{multivate_feature_example}. A house's price is now related to the size, number of bedrooms, number of floors, and age of it. Each row is an training example with left three feature columns and right one value column. We use n to denote the number of features, $x^{(i)}$ to denote the features of the $i^{th}$ training example and $x^{(i)}_{j}$ to denote the value of feature j in $i^{th}$ training example. For example, $x^{(2)}$ equals $[1416 \quad 3 \quad 2 \quad 40]^{T}$ and $x^{(2)}_{3}$ equals 2. Since the hypothesis of univariate linear regression is $h_{\theta}(x) = \theta_{0} + \theta_{1}x$, that of multivariate linear regression becomes (\ref{hypothesis}).
+ feature to predict values. An example of multiple features is shown in Table \ref{multivate_feature_example}. A house's price is now related to the size, number of bedrooms, number of floors, and age of it. Each row is an training example with left three feature columns and right one value column. We use n to denote the number of features, $x^{(i)}$ to denote the features of the $i^{th}$ training example and $x^{(i)}_{j}$ to denote the value of feature j in $i^{th}$ training example. For example, $x^{(2)}$ equals $[1416 \quad 3 \quad 2 \quad 40]^{T}$ and $x^{(2)}_{3}$ equals 2. Since the hypothesis of univariate linear regression is $h_{\Theta}(x) = \Theta_{0} + \Theta_{1}x$, that of multivariate linear regression becomes (\ref{hypothesis}).
 
 \begin{table}[ht]
 \begin{center}
@@ -31,18 +32,18 @@ size($feet^{2}$) & \# of bedrooms & \# of floors & Age(years) & Price(\$1000)\\
 \end{table}
 
 \begin{equation}\label{hypothesis}
-   h_{\theta}(x) = \theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2} + \ldots + \theta_{n}x_{n}
+   h_{\Theta}(x) = \Theta_{0} + \Theta_{1}x_{1} + \Theta_{2}x_{2} + \ldots + \Theta_{n}x_{n}
 \end{equation}
-Let $x^{(i)}_{0}$ = 1, $\theta = [\theta_{0} \quad \theta_{1} \ldots \theta_{n}]^{T}$, and $x = [x_{0} \quad x_{1} \quad \ldots x_{n}]^{T}$, then (\ref{hypothesis}) is refined as (\ref{hypothesis_refine}).
+Let $x^{(i)}_{0}$ = 1, $\Theta = [\Theta_{0} \quad \Theta_{1} \ldots \Theta_{n}]^{T}$, and $x = [x_{0} \quad x_{1} \quad \ldots x_{n}]^{T}$, then (\ref{hypothesis}) is refined as (\ref{hypothesis_refine}).
 
 \begin{equation}\label{hypothesis_refine}
- h_{\theta}(x) = {\theta}^{T}x
+ h_{\Theta}(x) = {\Theta}^{T}x
 \end{equation}
 
 \section{Gradient Descent}
 Refer to (\ref{hypothesis}) we can infer the cost function of multivariate linear regression shown in (\ref{cost_function}).
 \begin{equation}\label{cost_function}
-  J(\theta_{0}, \theta_{1}, \ldots , \theta_{n}) = \frac{1}{2m} \sum_{i=1}^{m} (h_\Theta({x^{(i)}})-y^{(i)})^2
+  J(\Theta_{0}, \Theta_{1}, \ldots , \Theta_{n}) = \frac{1}{2m} \sum_{i=1}^{m} (h_\Theta({x^{(i)}})-y^{(i)})^2
 \end{equation}
 And the gradient descent algorithm is adapted to:
 \medskip
@@ -53,15 +54,15 @@ Algorithm1: Gradient Descent for Multivariate Linear Regression
 \hrule
 \smallskip
 Repeat\{\\
-$\theta_j=\theta_j - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)}) \cdot x^{(i)}_{j}$\\
+$\Theta_j=\Theta_j - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\Theta(x^{(i)})-y^{(i)}) \cdot x^{(i)}_{j}$\\
 \}\\
 \hrule
 
 \section{Practical Issues}
 \subsection{Feature Scaling}
-The idea of feature scaling is to make sure that all features are on similar scale. If one feature's range is significantly dominating the others', the regression process will converge at a very slow speed. Generally, make the scale of all features is around [-1, 1] is a good choice. Methods for normalization includes dividing values by its ranges or first decreasing by its mean values and then dividing by its range. In a word, we can normalize x form [min, max] with x/(max-min) or (x-average([min, max]))/(max-min).
+The idea of feature scaling is to make sure that all features are on a similar scale. If one feature's range is significantly dominating the others', the regression process will converge at a very slow speed. Generally, making the scale of all features is around [-1, 1] is a good choice. Methods for normalization includes dividing values by its ranges or first decreasing by its mean values and then dividing by its range. In a word, we can normalize x from [min, max] with x/(max-min) or (x-average([min, max]))/(max-min).
 \subsection{Learning Rate}
-The core function of gradient descent is $\theta_j =\theta_j - \alpha\frac{\partial}{\partial \theta_j}J(\theta)$. When running gradient descent algorithm, we need to choose an appropriate $\alpha$ and make sure the algorithm is working correctly. Teacher recommended to plot the value of $J(\theta)$ against the number of regression iterations. If the plotted curve decreases faster as Fig. \ref{learning_rate_choice}(A), then we can confirm $\alpha$ and the algorithm all works well. If the plotted curve decreases slow as Fig. \ref{learning_rate_choice}(B), we need to increase the value of $\alpha$ a little more. Otherwise, the plotted curve increase as Fig. \ref{learning_rate_choice}(C) or vibrates as Fig. \ref{learning_rate_choice}(D), we have to decrease the value of $\alpha$.
+The core function of gradient descent is $\Theta_j =\Theta_j - \alpha\frac{\partial}{\partial \Theta_j}J(\Theta)$. When running gradient descent algorithm, we need to choose an appropriate $\alpha$ and make sure the algorithm is working correctly. Teacher recommended to plot the value of $J(\Theta)$ against the number of regression iterations. If the plotted curve decreases faster as Fig. \ref{learning_rate_choice}(A), then we can confirm $\alpha$ and the algorithm all works well. If the plotted curve decreases slow as Fig. \ref{learning_rate_choice}(B), we need to increase the value of $\alpha$ a little more. Otherwise, the plotted curve increase as Fig. \ref{learning_rate_choice}(C) or vibrates as Fig. \ref{learning_rate_choice}(D), we have to decrease the value of $\alpha$.
 
 \begin{figure}[ht]
   \centering
@@ -77,15 +78,15 @@ Generally, we can adopt three rules to choose features:
 \item Feature reduction.
 \item Polynomial feature
 \end{itemize}
-Feature generalization suggests that generalized feature is often better than multiple combined features. For example, when predicting the price of a house, the area is a good generalized feature than combined features with frontage and depth. When talking about feature reduction, we mean that features relevant to others should be removed and treated as redundant features. Since values may not be linearly relevant to features, we can use polynomial features such as square features, cubic features et. As polynomial feature is adopted, the hypothesis function may be like $h_{\theta}(x) = \theta_{0} + \theta_{1}x_{1} + \theta_{2}x_{2}^{2} + \theta_{3}x_{3}^{3}$. Let $y_{1} = x_{1}, y_{2} = x_{2}^{2}, y_{3} = x_{3} ^ {3}$, the hypothesis is reduced to $h_{\theta}(y) = \theta_{0} + \theta_{1}y_{1} + \theta_{2}y_{2} + \theta_{3}y_{3}$ which is a linear regression hypothesis.
+Feature generalization suggests that generalized feature is often better than multiple combined features. For example, when predicting the price of a house, the area is a good generalized feature than combined features with frontage and depth. When talking about feature reduction, we mean that features relevant to others should be removed and treated as redundant features. Since values may not be linearly relevant to features, we can use polynomial features such as square features, cubic features and so on. As polynomial feature is adopted, the hypothesis function may be like $h_{\Theta}(x) = \Theta_{0} + \Theta_{1}x_{1} + \Theta_{2}x_{2}^{2} + \Theta_{3}x_{3}^{3}$. Let $y_{1} = x_{1}, y_{2} = x_{2}^{2}, y_{3} = x_{3} ^ {3}$, the hypothesis is reduced to $h_{\Theta}(y) = \Theta_{0} + \Theta_{1}y_{1} + \Theta_{2}y_{2} + \Theta_{3}y_{3}$ which is a linear regression hypothesis.
 \section{Normal Equation}
-Gradient descent solves linear regression literately, however, normal equation solves it in a analytical way. Recall that the cost function of linear regression is $J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\Theta({x^{(i)}})-y^{(i)})^2$ and according to normal equation, let $\frac{\partial}{\partial \theta_j}J(\theta_j, \theta_1) = 0$ (for j = 0 \ldots m), and we will get a system of equations. Applying $J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\Theta({x^{(i)}})-y^{(i)})^2$, the linear algebra form of normal equation is:
+Gradient descent solves linear regression literately, however, normal equation solves it in a analytical way. Recall that the cost function of linear regression is $J(\Theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\Theta({x^{(i)}})-y^{(i)})^2$ and according to normal equation, let $\frac{\partial}{\partial \Theta_j}J(\theta_j, \Theta_1) = 0$ (for j = 0 \ldots m), and we will get a system of equations. Applying $J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\Theta({x^{(i)}})-y^{(i)})^2$, the linear algebra form of normal equation is:
 \begin{equation}\label{normal_quation_linear_algebra form}
-X^{T}X\theta - X^{T}Y = 0
+X^{T}X\Theta - X^{T}Y = 0
 \end{equation}
 thus,
 \begin{equation}\label{theta_expression}
-\theta = (X^{T}X)^{-1}X^{T}Y
+\Theta = (X^{T}X)^{-1}X^{T}Y
 \end{equation}
 The advantages and disadvantages comparison between gradient descent and normal equation is shown in Table\ref{normal_equation_comparison_with_gradient_descent}.
 \begin{table}[ht]

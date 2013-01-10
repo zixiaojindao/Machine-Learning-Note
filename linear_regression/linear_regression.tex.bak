@@ -11,7 +11,23 @@
 \newpage
 
 \section{Model Representation}
-Remind that regression algorithms are tying to infer a function predicting continuous values when given training samples. Let's first focus on the notation of the training samples. Regarding to Table1, training samples are represented by a vector of \textbf{x} and a vector of \textbf{y} with identical length of m and each sample becomes a pair of ($x^{(i)}$, $y^{(i)}$). The inferred function h(which means hypothesis) is shown as below:\\
+Remind that regression algorithms are tying to infer a function predicting continuous values when given training samples. Let's first focus on the notation of the training samples. Regarding to Table \ref{example_notation}, training samples are represented by a vector of \textbf{x} and a vector of \textbf{y} with identical length of m and each sample becomes a pair of ($x^{(i)}$, $y^{(i)}$). The inferred function h(which means hypothesis) is shown as below:\\
+\begin{table}[ht]
+\begin{center}
+\caption{}\label{example_notation}
+\begin{tabular}{c|c}
+\hline
+Notation & Meaning\\
+\hline
+m &  number of training examples\\
+\hline
+x & input variables/features\\
+\hline
+y & output variables\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
 
 \begin{equation}\label{hypothesis_function}
   h_\Theta(x)=\Theta_0 + \Theta_1x
@@ -27,13 +43,30 @@ Obviously, the object function is defined as:
 \begin{equation}\label{object_function}
 \underset{\Theta_0, \Theta_1}{minimize} \frac{1}{2m} \sum_{1}^{m} (h_\Theta({x^{(i)}})-y^{(i)})^2
 \end{equation}
-Using the cost function, we can easily calculate the cost value of any hypothesis functions. For example, Figure1 shows three samples(cross pointers) and a hypothesis function $h(x)=0.5x$. The cost value of it is calculated as:
+Using the cost function, we can easily calculate the cost value of any hypothesis functions. For example, Fig. \ref{examples_hypothesis_plot} shows three samples(cross pointers) and a hypothesis function $h(x)=0.5x$. The cost value of it is calculated as:
 \begin{equation}\label{cost_function_example}
 J(0.5)=\frac{1}{2 \times 3}[(0.5-1)^2 + (1-2)^2 + (1.5-3)^2]=\frac {3.5}{6}
 \end{equation}
-
+\begin{figure}[ht]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=5cm]{Figure1.jpg}\\
+  \caption{}\label{examples_hypothesis_plot}
+\end{figure}
 \section{Gradient Descent}
-Now we turn to the calculation methods of the objection function. Suppose we have a training set as shown in Figure3. We can enumerate all the possible values of $\Theta_0$ and $\Theta_1$ and calculate the corresponding cost $J(\Theta_0, \Theta_1$) and show them in a 3D space like Figure2. In Figure2, if we start from a random pointer$(\Theta_0, \Theta_1, J(\Theta_0, \Theta_1))$, we can iteratively migrate a small step through the negative direction of the gradient direction of this point and hopefully, we will converge to the lowest point of the surface.
+Now we turn to the calculation methods of the objection function. Suppose we have a training set as shown in Fig. \ref{training_dataset}. We can enumerate all the possible values of $\Theta_0$ and $\Theta_1$ and calculate the corresponding cost $J(\Theta_0, \Theta_1$) and show them in a 3D space like Fig \ref{3D_cost_function_plot}. In Fig. \ref{3D_cost_function_plot}, if we start from a random pointer$(\Theta_0, \Theta_1, J(\Theta_0, \Theta_1))$, we can iteratively migrate a small step through the negative direction of the gradient direction of this point and hopefully, we will converge to the lowest point of the surface.
+\begin{figure}[ht]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=5cm]{Figure2.jpg}\\
+  \caption{}\label{3D_cost_function_plot}
+\end{figure}
+\begin{figure}[ht]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=5cm]{Figure3.jpg}\\
+  \caption{}\label{training_dataset}
+\end{figure}
 \newline Formally, we describe gradient descent algorithm as following:\\
 Algorithm1:\\
 $\Theta_0 = 0;$\\
@@ -49,7 +82,7 @@ $\theta_0 = temp0$\\
 $\theta_1 = temp1$\\
 If we do not take a simultaneous update, the output of gradient descent algorithm is not defined.\\
 Issue3: Gradient Descent algorithm starts from a random point, so the output is a local optima instead of global optima. However, if the object function is a convex function, it is guaranteed that gradient descent algorithm will reach the global optima.\\
-Get back to the linear regression problem, we use gradient descent to solve the problem of \ref{}. If we apply formula(1) to algorithm1 and calculate the differential result, we will get:\\
+Get back to the linear regression problem, we use gradient descent to solve the problem of (\ref{object_function}). If we apply (\ref{hypothesis_function}) to algorithm1 and calculate the differential result, we will get:\\
 repeat until convergence \{\\
 $\theta_0=\theta_0 - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})$\\
 $\theta_1=\theta_1 - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)}) \cdot x^{(i)}$\\
@@ -57,6 +90,6 @@ $\theta_1=\theta_1 - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)}
 Note that we use all the samples to update the arguments in each step, so we called it "batch" gradient descent. Until now, linear regression problem is successfully solved by "batch" gradient descent.
 
 \section{Summary}
-Univariate linear regression model is represented as formula(1), and its cost function and objection function are shown as formula(2) and formula(3) separately. Apply object function with gradient descent algorithm will solve linear regression problem.
+Univariate linear regression model is represented as (\ref{hypothesis_function}), and its cost function and objection function are shown as (\ref{cost_function}) and (\ref{object_function}) separately. Apply object function with gradient descent algorithm will solve linear regression problem.
 
 \end{document}
