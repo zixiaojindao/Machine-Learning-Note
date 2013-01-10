@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  8 JAN 2013 20:09
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  10 JAN 2013 10:53
 entering extended mode
 **D:/course/note/survey/eng/SequenceAssembly.tex
 (D:/course/note/survey/eng/SequenceAssembly.tex
@@ -345,7 +345,7 @@ Package rerunfilecheck Info: File `SequenceAssembly.out' has not changed.
 Here is how much of TeX's memory you used:
  4992 strings out of 495354
  72938 string characters out of 3183858
- 159993 words of memory out of 3000000
+ 158993 words of memory out of 3000000
  8082 multiletter control sequences out of 15000+200000
  8233 words of font info for 29 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -359,7 +359,7 @@ r6.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/CTEX/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmr9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/
 CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on SequenceAssembly.pdf (12 pages, 667209 bytes).
+Output written on SequenceAssembly.pdf (12 pages, 667034 bytes).
 PDF statistics:
  235 PDF objects out of 1000 (max. 8388607)
  52 named destinations out of 1000 (max. 500000)
