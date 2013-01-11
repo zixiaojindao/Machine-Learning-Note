@@ -29,11 +29,11 @@ Over-fitting problem occurs when the learned hypothesis fits the training data s
 \end{figure}
 
 \section{Regularized Cost Function}
-The intuition of regularization is to penalize large parameters of $\theta$ and keep the hypothesis simple. In Fig. \ref{over-fitting_linear_regression_example}C, if we can penalize $\theta_{4}$ and shrink it to zero, the hypothesis will much closer to the "right" one. Regularization adds a term of $\frac{\lambda}{2m} \sum_{j=1}^{n}\theta_{j}^{2}$ to the regression cost function. So, the new cost function is as (\ref{regular_cost_function}).
+The intuition of regularization is to penalize large parameters of $\Theta$ and keep the hypothesis simple. In Fig. \ref{over-fitting_linear_regression_example}C, if we can penalize $\Theta_{4}$ and shrink it to zero, the hypothesis will much closer to the "right" one. Regularization adds a term of $\frac{\lambda}{2m} \sum_{j=1}^{n}\Theta_{j}^{2}$ to the regression cost function. So, the new cost function is as (\ref{regular_cost_function}).
 \begin{equation}\label{regular_cost_function}
-J^{'}(\theta) = J(\theta) + \frac{\lambda}{2m} \sum_{j=1}^{n}\theta_{j}^{2}
+J^{'}(\Theta) = J(\Theta) + \frac{\lambda}{2m} \sum_{j=1}^{n}\Theta_{j}^{2}
 \end{equation}
-The larger value of $\theta_{j}$, the larger cost of the corresponding hypothesis, hence the gradient descent algorithm will penalize large $\theta_{j}$. Note j starts from 1 instead of 0, it is because $\theta_{0}$ is the const value of the hypothesis function and does not influence the complexity.
+The larger value of $\Theta_{j}$, the larger cost of the corresponding hypothesis, hence the gradient descent algorithm will penalize large $\Theta_{j}$. Note j starts from 1 instead of 0, it is because $\Theta_{0}$ is the const value of the hypothesis function and does not influence the complexity.
 
 \section{Regularized Gradient Descent}
 Calculating the partial derivatives of (\ref{regular_cost_function}) for each of $\theta_{j}$, we can infer the regularized gradient descent for regression problem. The only difference of regularized gradient descent for linear regression and logistic regression is the hypothesis function.
@@ -45,17 +45,17 @@ Algorithm1: Regularized Gradient Descent for Regression Problem
 \hrule
 \smallskip
 Repeat\{\\
-$\theta_0=\theta_0 - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)}) \cdot x^{(i)}_{0}$\\
-$\theta_j=\theta_j(1 - \frac{\lambda}{\alpha m}) - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)}) \cdot x^{(i)}_{j}$ (j=1 \ldots n)\\
+$\Theta_0=\Theta_0 - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\Theta(x^{(i)})-y^{(i)}) \cdot x^{(i)}_{0}$\\
+$\Theta_j=\Theta_j(1 - \frac{\lambda}{\alpha m}) - \alpha \frac{1}{m} \sum_{i=1}^{m}(h_\Theta(x^{(i)})-y^{(i)}) \cdot x^{(i)}_{j}$ (j=1 \ldots n)\\
 \}\\
 \hrule
 \section{Regularized Normal Equation}
-Normal equation is an alternative for solving linear regression problem. All $\theta s$ can be calculated by a system of linear equations. When using the new regularized cost function shown in (\ref{regular_cost_function}), we have the regularized normal equation shown in (\ref{regularized_normal_euqation}).
+Normal equation is an alternative for solving linear regression problem. All $\Theta s$ can be calculated by a system of linear equations. When using the new regularized cost function shown in (\ref{regular_cost_function}), we have the regularized normal equation shown in (\ref{regularized_normal_euqation}).
 \begin{equation}\label{regularized_normal_euqation}
-\theta = (X^{T}X + \lambda(I_{n} - e_{0}))^{-1}X^{T}Y
+\Theta = (X^{T}X + \lambda(I_{n+1} - e_{0}))^{-1}X^{T}Y
 \end{equation}
-In (\ref{regularized_normal_euqation}), $I_{n}$ is n $\times$ n dimensional elementary matrix and $e_{0}$ equals $[1 \quad 0 \ldots 0]_{1 \times n}^{T}$.
+In (\ref{regularized_normal_euqation}), $I_{n}$ is n $\times$ n dimensional elementary matrix and $e_{0}$ equals $[1 \quad 0 \ldots 0]_{1 \times (n+1)}^{T}$.
 
 \section{Summary}
-Over-fitting is a common problem when using machine learning algorithms. Regularization penalizes large $\theta s$ and keep the hypothesis simple to overcome this problem. In practice, regularization produces good outcome.
+Over-fitting is a common problem when using machine learning algorithms. Regularization penalizes large $\Theta s$ and keep the hypothesis simple to overcome this problem. In practice, regularization produces good outcome.
 \end{document}

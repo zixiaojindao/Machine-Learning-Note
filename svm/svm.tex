@@ -2,7 +2,8 @@
 
 \usepackage{graphicx}
 \usepackage{multirow}
-
+\usepackage{color}
+\usepackage[citecolor=black,linkcolor=black,urlcolor=blue,colorlinks=true]{hyperref}
 \title{Note: Support Vector Machines}
 \author{Sun Zhao}
 
@@ -18,7 +19,7 @@
   \includegraphics[width=5cm]{Figure1.jpg}\\
   \caption{}\label{hyper-plane-example1}
 \end{figure}
- Recall that in logistic regression, we use $\Theta^{T}x = 0$ as the hyper-plane, and predict positive class if $\Theta^{T}x \ge 0$, otherwise, negative class. SVM is trying to keeps a minimum margin between the two classes and wants $\Theta^{T}x \ge 1$ if x is positive and $\Theta^{T}x \le -1$ if x is negative. Let $H_{1}$ denotes $\Theta^{T}x = 1$, $H_{0}$ denotes $\Theta^{T}x = -1$ and $H_{0}$ denotes $\Theta^{T}x = 0$. The margin distance between $H_{1}$ and $H_{-1}$ is $\frac{2}{||\Theta_{1 \ldots n}||}$ where $||\Theta_{1 \ldots n}||$ equals $\sqrt{\sum_{i = 1}^{n} \Theta_{i}^{2}}$. The location relationships between training examples and $H_{1}, H_{0}, H_{-1}$ is shown in Fig. \ref{hyper-plane-example2}. The optimization problem can be summarized as follow:\\
+ Recall that in logistic regression, we use $\Theta^{T}x = 0$ as the hyper-plane, and predict positive class if $\Theta^{T}x \ge 0$, otherwise, negative class. SVM is trying to keeps a minimum margin between the two classes and wants $\Theta^{T}x \ge 1$ if x is positive and $\Theta^{T}x \le -1$ if x is negative. Let $H_{1}$ denotes $\Theta^{T}x = 1$, $H_{-1}$ denotes $\Theta^{T}x = -1$ and $H_{0}$ denotes $\Theta^{T}x = 0$. The margin distance between $H_{1}$ and $H_{-1}$ is $\frac{2}{||\Theta_{1 \ldots n}||}$ where $||\Theta_{1 \ldots n}||$ equals $\sqrt{\sum_{i = 1}^{n} \Theta_{i}^{2}}$. The location relationships between training examples and $H_{1}, H_{0}, H_{-1}$ is shown in Fig. \ref{hyper-plane-example2}. The optimization problem can be summarized as follow:\\
 %Minimize $||\Theta_{1 \ldots n}||$\\
 \begin{equation}
 \min ||\Theta_{1 \ldots n}||
@@ -41,7 +42,7 @@ Instead of following the logarithm example cost function, SVM introduces cost fu
 \begin{center}
 \begin{tabular}{l}
 if $y^{(i)}$=1, cost = 0 when $\Theta^{T}x^{(i)} \ge 1$\\
-if $y^{(i)}$=0, cost = 1 when $\Theta^{T}x^{(i)} \le -1$\\
+if $y^{(i)}$=0, cost = 0 when $\Theta^{T}x^{(i)} \le -1$\\
 \end{tabular}
 \end{center}
 \end{table}
@@ -51,7 +52,7 @@ if $y^{(i)}$=0, cost = 1 when $\Theta^{T}x^{(i)} \le -1$\\
   \includegraphics[width=10cm]{Figure3.jpg}\\
   \caption{}\label{example_cost_funtion_visulization}
 \end{figure}
-The cost function is defined as (\ref{lambada_cost_fuction}). We can move and scale the const value, thus, have a equivalent cost function shown in (\ref{C_cost_fuction}). C is called the regular factor. If C is set to be very large, the optimization algorithm will try to set $Cost_{1}$ and $Cost_{0}$ to be 0 which is satisfied when $\Theta^{T}x^{(i)} \ge 1$ if $y^{(i)} = 1$ and $\Theta^{T}x^{(i)} \le -1$ if $y^{(i)} = 0$. What's more, the minimizing term becomes $minimize \sum_{j=1}^{n}\Theta_{j}^{2}$ as the first term approaching to 0. This is consistent with optimization definition described in section 1.
+\\The cost function is defined as (\ref{lambada_cost_fuction}). We can move and scale the const value, thus, have a equivalent cost function shown in (\ref{C_cost_fuction}). C is called the regular factor. If C is set to be very large, the optimization algorithm will try to set $Cost_{1}$ and $Cost_{0}$ to be 0 which is satisfied when $\Theta^{T}x^{(i)} \ge 1$ if $y^{(i)} = 1$ and $\Theta^{T}x^{(i)} \le -1$ if $y^{(i)} = 0$. What's more, the minimizing term becomes $minimize \sum_{j=1}^{n}\Theta_{j}^{2}$ as the first term approaching to 0. This is consistent with optimization definition described in section 1.
 \begin{equation}\label{lambada_cost_fuction}
 \frac{1}{m} \biggl[\sum_{i=1}^{m} y^{(i)}Cost_{1}(\Theta^{T}x^{(i)}) + (1 - y^{(i)})Cost_{0}(\Theta^{T}x^{(i)})\biggr] + \frac{\lambda}{2m}\sum_{j=1}^{n}\Theta_{j}^{2}
 \end{equation}
@@ -68,8 +69,8 @@ f_{i} = kernel(x, l^{(i)})
 GaussianKenel(x, l^{(i)}) = exp(\frac{||x-l^{(i)}||}{2\sigma^{2}})
 \end{equation}
 
-\section{Using a SVM}
-While using a SVM, It is suggested that we should use a mature software package like liblinear, libsvm etc. What we need to specify is the choice of C and kernel function. Teacher gives some notations when using SVM listed as following:
+\section{Using an SVM}
+While using an SVM, It is suggested that we should use a mature software package like liblinear, libsvm etc. What we need to specify is the choice of C and kernel function. Teacher gives some notations when using SVM listed as following:
 \begin{itemize}
 \item Do perform feature scaling whenever need.
 \item No all similarity functions make valid kernels.
@@ -78,7 +79,7 @@ While using a SVM, It is suggested that we should use a mature software package 
 \item If n is large(relative to m) then use logistic regression or SVM without kernel function.
 \item If n is small and m is mediate then use SVM with Gaussian kernel function.
 \item If n is small and m is large then create more features.
-\item Use C to tune the trade off between bias and variance. 
+\item Use C to tune the trade off between bias and variance.
 \end{itemize}
 
 \section{Summary}

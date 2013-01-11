@@ -2,7 +2,8 @@
 
 \usepackage{graphicx}
 \usepackage{multirow}
-
+\usepackage{color}
+\usepackage[citecolor=black,linkcolor=black,urlcolor=blue,colorlinks=true]{hyperref}
 \title{Note: Support Vector Machines}
 \author{Sun Zhao}
 
@@ -60,11 +61,27 @@ C\biggl[\sum_{i=1}^{m} y^{(i)}Cost_{1}(\Theta^{T}x^{(i)}) + (1 - y^{(i)})Cost_{0
 \end{equation}
 
 \section {Kernels}
-Kernels are used to select features and make the hypothesis having a form like $h_{\Theta}(x) = \Theta_{0} + \Theta_{1}f_{1} + \Theta_{2}f_{2} + \ldots$. The features $f_{i}$ is defined as (\ref{feature_kernel}) where $l^{(i)}$ is landmarks we should manually choose. The most common kernel function is Gaussian kernel shown in (\ref{Gaussian_kernel}). Gaussian kernel measures the similarity of $x^{(i)}$ and landmarks $l^{(j)}$ which means that kernel values goes 1 while $x^{(i)}$ goes near to $l^{(j)}$ and goes 0 while $x^{(i)}$ goes far to $l^{(j)}$. The kernel is useful when the classification problem is non-linear which is not understood by me.
+Kernels are used to select features and make the hypothesis having a form like $h_{\Theta}(x) = \Theta_{0} + \Theta_{1}f_{1} + \Theta_{2}f_{2} + \ldots$. The features $f_{i}$ is defined as (\ref{feature_kernel}) where $l^{(i)}$ is landmarks we should manually choose. The most common kernel function is Gaussian kernel shown in (\ref{Gaussian_kernel}). Gaussian kernel measures the similarity of $x^{(i)}$ and landmarks $l^{(j)}$ which means that kernel values goes 1 while $x^{(i)}$ goes near to $l^{(j)}$ and goes 0 while $x^{(i)}$ goes far from $l^{(j)}$. The kernel is useful when the classification problem is non-linear which is not understood by me.
 \begin{equation}\label{feature_kernel}
 f_{i} = kernel(x, l^{(i)})
 \end{equation}
 \begin{equation}\label{Gaussian_kernel}
 GaussianKenel(x, l^{(i)}) = exp(\frac{||x-l^{(i)}||}{2\sigma^{2}})
 \end{equation}
+
+\section{Using a SVM}
+While using a SVM, It is suggested that we should use a mature software package like liblinear, libsvm etc. What we need to specify is the choice of C and kernel function. Teacher gives some notations when using SVM listed as following:
+\begin{itemize}
+\item Do perform feature scaling whenever need.
+\item No all similarity functions make valid kernels.
+\item Polynomial, String, chi-square, histogram intersection kernel can be used.
+\item Using built-in multi-class SVM or One-VS-All method for multi-class classification.
+\item If n is large(relative to m) then use logistic regression or SVM without kernel function.
+\item If n is small and m is mediate then use SVM with Gaussian kernel function.
+\item If n is small and m is large then create more features.
+\item Use C to tune the trade off between bias and variance.
+\end{itemize}
+
+\section{Summary}
+SVM is one of the most popular classifier among machine learning classifiers. It can handle linear and non linear classification problem. Mature packages are provided for efficient running SVM.
 \end{document}
