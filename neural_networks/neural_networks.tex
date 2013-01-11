@@ -2,7 +2,8 @@
 
 \usepackage{graphicx}
 \usepackage{multirow}
-
+\usepackage{color}
+\usepackage[citecolor=black,linkcolor=black,urlcolor=blue,colorlinks=true]{hyperref}
 \title{Note: Neural Networks}
 \author{Sun Zhao}
 
@@ -11,7 +12,7 @@
 \newpage
 
 \section{Representation}
-Brain makes human to learn and gain knowledge. So, what's the structure inside brain and how does brain learn? The answer is neural networks. In biology, neural networks inside our brains consist of billions of neurons, each of which can produce and transfer biological information to others and receive from others too. In machine learning field, neural networks are algorithms that mimic our brain's neural networks. Fig. \ref{neuron_model} shows a simplest neuron having several inputs and one output. There are weights/parmeters on each edge between neurons to represent how strong the connection is. Each neuron collects all the weighted inputs, performs self-defined calculation and produces weighted output. We use an activation function to define the calculation performed on each neuron. Fig .\ref{logistic_neuron_unit} shows a logistic neuron consisting of a sigmoid activation function and an extra bias unit of $x_{0}$. Fig. \ref{neural_networks} shows a typical neural networks including input layer, hidden layer and output layer. Neurons between layer i and layer i +1 are pair-wise connected. Calculations performed on each neuron are shown in the bottom of Fig. \ref{neural_networks}.
+Brain makes human to learn and gain knowledge. So, what's the structure inside brain and how does brain learn? The answer is neural networks. In biology, neural networks inside our brains consist of billions of neurons, each of which can produce and transfer biological information to others and receive from others too. In machine learning field, neural networks are algorithms that mimic our brain's neural networks. Fig. \ref{neuron_model} shows a simple neuron having several inputs and one output. There are weights/parmeters on each edge between neurons to represent how strong the connection is. Each neuron collects all the weighted inputs, performs self-defined calculation and produces weighted output. We use an activation function to define the calculation performed on each neuron. Fig .\ref{logistic_neuron_unit} shows a logistic neuron consisting of a sigmoid activation function and an extra bias unit of $x_{0}$. Fig. \ref{neural_networks} shows a typical neural networks including input layer, hidden layer and output layer. Neurons between layer i and layer i +1 are pair-wise connected. Calculations performed on each neuron are shown in the bottom of Fig. \ref{neural_networks}.
 \begin{figure}[ht]
   \centering
   % Requires \usepackage{graphicx}
@@ -70,7 +71,7 @@ $(h_{\Theta}(x))_{i}$ & $i_{th}$ output hypothesis\\
 \begin{equation}\label{neural_networks_cost_function}
 J(\Theta) = -\frac{1}{m}\biggl[\sum_{i=1}^{m}\sum_{k=1}^{K} y_{k}^{(i)}log(h_{\Theta}(x^{(i)}))_{k} + (1 - y_{k}^{(i)})log(1 - (h_{\Theta}(x^{(i)}))_{k})\biggr] + \frac{\lambda}{2m}\sum_{l=1}^{L-1}\sum_{i=1}^{s_{l}}\sum_{j=1}^{s_{l+1}}(\Theta_{ji}^{(l)})^{2}
 \end{equation}
-The index of i starts from 1 instead of 0 is because the bias is always ignored to regularize.
+The index of i starts from 1 instead of 0 is because the bias is always ignored to be regularized.
 
 \section{Forward and Backward Propagation}
 When implementing gradient descent algorithm, we need compute $J(\Theta)$ and the partial derivative terms of $\frac{\partial}{\partial \Theta_{ij}^{(l)}}$ for all i, j, and l. Forward and backward propagation are used to calculate the two terms. Fig. \ref{four_layer_neural_networks} shows a four-layer neural networks. Starting from the first layer and calculate output as input of previous layer iteratively, the final hypothesis will be the last output. Concretely, we can use following procedure to compute the hypothesis for Fig. \ref{four_layer_neural_networks}'s neural networks.
@@ -81,7 +82,7 @@ When implementing gradient descent algorithm, we need compute $J(\Theta)$ and th
 $a^{(1)}$ &= &x\\
 $z^{(2)}$ &= &$\Theta^{(1)}a^{(1)}$\\
 $a^{(2)}$ &= &$g(z^{(2)})$(add $a_{0}^{(2)}$)\\
-$z^({3)}$ &= &$\Theta^{(2)}a^{(2)}$\\
+$z^{(3)}$ &= &$\Theta^{(2)}a^{(2)}$\\
 $a^{(3)}$ &= &$g(z^{(3)})$(add $a_{0}^{(3)}$)\\
 $z^{(4)}$ &= &$\Theta^{(3)}a^{(3)}$\\
 $a^{(4)}$ &= &$h_{\Theta}(x)=g(z^{(4)})$\\
@@ -95,11 +96,11 @@ $a^{(4)}$ &= &$h_{\Theta}(x)=g(z^{(4)})$\\
   \includegraphics[width=5cm]{Figure7.jpg}\\
   \caption{Neuron Model}\label{four_layer_neural_networks}
 \end{figure}
-To calculate the derivative terms, we introduce a new notation of $\delta_{j}^{(l)}$ to represent the error of node i on layer j. For the output unit, it is obvious that $\delta_{j}^{(L)} = a_{j}^{(L)} - y_{j}^{(L)}$, and for layers which is prior to L, (\ref{delta_backward_propagation}) is used to iteratively calculate its value. The term $g'(z^{(l)})$ in (\ref{delta_backward_propagation}) can be extended to $a^{(l)}.*(1-a^{(l)})$.
+To calculate the derivative terms, we introduce a new notation of $\delta_{j}^{(l)}$ to represent the error of node j on layer l. For the output unit, it is obvious that $\delta_{j}^{(L)} = a_{j}^{(L)} - y_{j}^{(L)}$, and for layers which is prior to L, (\ref{delta_backward_propagation}) is used to iteratively calculate its value. The term $g'(z^{(l)})$ in (\ref{delta_backward_propagation}) can be extended to $a^{(l)}.*(1-a^{(l)})$.
 \begin{equation}\label{delta_backward_propagation}
 \delta^{(l)} = (\Theta^{(l)})^{T}\delta^{(l+1)}.*g'(z^{(l)})
 \end{equation}
-Algorithm 1 shows the back propagation process and output all layers $\delta$ values with which we can define $\frac{\partial}{\partial \Theta_{ij}^{(l)}}$ as (\ref{partial_derivative_defination}). The prove of Algorithm 1 and Formula \ref{} is skipped, and I cannot figure it out myself. The partial derivative terms' calculation is quit obscure and different from that in logistic regression gradient descent process. I need refer other references to find more details.
+Algorithm 1 shows the back propagation process and output all layers' $\delta$ values with which we can define $\frac{\partial}{\partial \Theta_{ij}^{(l)}}$ as (\ref{partial_derivative_defination}). The prove of Algorithm 1 and (\ref{delta_backward_propagation}) is skipped, and I cannot figure it out myself. The partial derivative terms' calculation is quit obscure and different from that in logistic regression gradient descent process. I need refer other references to find more details.
 \smallskip
 \hrule
 \smallskip
@@ -149,8 +150,8 @@ end;\\
 \medskip
 
 \section{Random Initialization}
-Recall that in logistic regression gradient descent, the initial parameters of $\Theta$ all is set to zero. However, this initialization strategy it adopted on neural networks, no matter how many iterations have been processed, the parameters to the same neuron are all identical. Hence, we need a random initialization to break this symmetry. In Octave, \emph{rand(m, n)*(2*EPSILON) - EPLISON} can generate a random m $times$ n dimensional matrix with all element between -EPSLION and +EPSLION.
+Recall that in logistic regression gradient descent, the initial parameters of $\Theta$ all is set to zero. However, if this initialization strategy is adopted on neural networks, no matter how many iterations have been processed, the parameters to the same neuron are all identical. Hence, we need a random initialization to break this symmetry. In Octave, \emph{rand(m, n)*(2*EPSILON) - EPLISON} can generate a random m$\times$n dimensional matrix with all element between -EPSLION and +EPSLION.
 
 \section{Summary}
-Neural networks mimics the structure of human brain, and shows power on non-linear classification problem. We use forward and backward propagation to calculation $J(\Theta)$ and $\frac{\partial}{\partial \Theta_{ij}^{(l)}}$ separately. When implementing back propagation algorithm, it is suggested to use a gradient checking and random initialization. At last, the succeed of autonomous driving based on neural networks really shows the power of machine learning.
+Neural networks mimics the structure of human brain, and shows power on non-linear classification problem. We use forward and backward propagation to calculate $J(\Theta)$ and $\frac{\partial}{\partial \Theta_{ij}^{(l)}}$ separately. When implementing back propagation algorithm, it is suggested to use a gradient checking and random initialization. At last, the succeed of autonomous driving based on neural networks really shows the power of machine learning.
 \end{document}
