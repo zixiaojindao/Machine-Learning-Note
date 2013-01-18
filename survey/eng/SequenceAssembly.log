@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  11 JAN 2013 13:31
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  18 JAN 2013 17:30
 entering extended mode
 **D:/course/note/survey/eng/SequenceAssembly.tex
 (D:/course/note/survey/eng/SequenceAssembly.tex
@@ -56,13 +56,47 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 (d:\CTEX\MiKTeX\tex\latex\multirow\multirow.sty
 \bigstrutjot=\dimen105
 )
-(d:\CTEX\MiKTeX\tex\latex\graphics\color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+(d:\CTEX\MiKTeX\tex\latex\listings\listings.sty
+\lst@mode=\count88
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count89
+\lst@currlwidth=\dimen106
+\lst@column=\count90
+\lst@pos=\count91
+\lst@lostspace=\dimen107
+\lst@width=\dimen108
+\lst@newlines=\count92
+\lst@lineno=\count93
+\lst@maxwidth=\dimen109
+
+(d:\CTEX\MiKTeX\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count94
+\lst@skipnumbers=\count95
+\lst@framebox=\box27
+)
+(d:\CTEX\MiKTeX\tex\latex\listings\listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(d:\CTEX\MiKTeX\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (d:\CTEX\MiKTeX\tex\latex\00miktex\color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (d:\CTEX\MiKTeX\tex\latex\hyperref\hyperref.sty
 Package: hyperref 2012/02/06 v6.82o Hypertext links for LaTeX
@@ -114,14 +148,14 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (d:\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty
 Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
 )
-\@linkdim=\dimen106
-\Hy@linkcounter=\count88
-\Hy@pagecounter=\count89
+\@linkdim=\dimen110
+\Hy@linkcounter=\count96
+\Hy@pagecounter=\count97
 
 (d:\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def
 File: pd1enc.def 2012/02/06 v6.82o Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count90
+\Hy@SavedSpaceFactor=\count98
 
 (d:\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -134,16 +168,16 @@ Package hyperref Info: Plain pages OFF on input line 4061.
 Package hyperref Info: Backreferencing OFF on input line 4066.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4284.
-\c@Hy@tempcnt=\count91
+\c@Hy@tempcnt=\count99
 
 (d:\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4637.
-\Fld@menulength=\count92
-\Field@Width=\dimen107
-\Fld@charsize=\dimen108
+\Fld@menulength=\count100
+\Field@Width=\dimen111
+\Fld@charsize=\dimen112
 Package hyperref Info: Hyper figures OFF on input line 5757.
 Package hyperref Info: Link nesting OFF on input line 5762.
 Package hyperref Info: Hyper index ON on input line 5765.
@@ -153,17 +187,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 5782.
 Package hyperref Info: PDF/A mode OFF on input line 5787.
 LaTeX Info: Redefining \ref on input line 5827.
 LaTeX Info: Redefining \pageref on input line 5831.
-\Hy@abspage=\count93
-\c@Item=\count94
-\c@Hfootnote=\count95
+\Hy@abspage=\count101
+\c@Item=\count102
+\c@Hfootnote=\count103
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (d:\CTEX\MiKTeX\tex\latex\hyperref\hpdftex.def
 File: hpdftex.def 2012/02/06 v6.82o Hyperref driver for pdfTeX
-\Fld@listcount=\count96
-\c@bookmark@seq@number=\count97
+\Fld@listcount=\count104
+\c@bookmark@seq@number=\count105
 
 (d:\CTEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -173,185 +207,198 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip43
 )
 (D:\course\note\survey\eng\SequenceAssembly.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
 
 (d:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count98
-\scratchdimen=\dimen109
-\scratchbox=\box26
-\nofMPsegments=\count99
-\nofMParguments=\count100
-\everyMPshowfont=\toks15
-\MPscratchCnt=\count101
-\MPscratchDim=\dimen110
-\MPnumerator=\count102
-\makeMPintoPDFobject=\count103
-\everyMPtoPDFconversion=\toks16
+\scratchcounter=\count106
+\scratchdimen=\dimen113
+\scratchbox=\box28
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen114
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
+\everyMPtoPDFconversion=\toks17
 )
-\AtBeginShipoutBox=\box27
-Package hyperref Info: Link coloring ON on input line 11.
+\c@lstlisting=\count112
+\AtBeginShipoutBox=\box29
+Package hyperref Info: Link coloring ON on input line 12.
  (d:\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
 (d:\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count104
+\c@section@level=\count113
 )
-LaTeX Info: Redefining \ref on input line 11.
-LaTeX Info: Redefining \pageref on input line 11.
-LaTeX Info: Redefining \nameref on input line 11.
+LaTeX Info: Redefining \ref on input line 12.
+LaTeX Info: Redefining \pageref on input line 12.
+LaTeX Info: Redefining \nameref on input line 12.
 
 (D:\course\note\survey\eng\SequenceAssembly.out)
 (D:\course\note\survey\eng\SequenceAssembly.out)
 \@outlinefile=\write3
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 13.
+(Font)              <12> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 13.
+(Font)              <8> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 13.
+(Font)              <6> on input line 20.
  [1
 
 {d:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
-Overfull \hbox (3.83966pt too wide) in paragraph at lines 16--17
+Overfull \hbox (3.83966pt too wide) in paragraph at lines 23--24
 []\OT1/cmr/m/n/9 Second-generation high-throughput se-quenc-ing meth-od-s gen-e
 r-ates large
  []
 
-<Figure1.jpg, id=40, 660.96938pt x 145.29282pt>
+<Figure1.jpg, id=44, 660.96938pt x 145.29282pt>
 File: Figure1.jpg Graphic file (type jpg)
  <use Figure1.jpg>
-Package pdftex.def Info: Figure1.jpg used on input line 26.
+Package pdftex.def Info: Figure1.jpg used on input line 33.
 (pdftex.def)             Requested size: 227.62204pt x 50.03517pt.
  [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 31.
+(Font)              <7> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 31.
+(Font)              <5> on input line 38.
 
-<Figure2.jpg, id=57, 734.745pt x 231.11343pt>
+<Figure2.jpg, id=61, 734.745pt x 231.11343pt>
 File: Figure2.jpg Graphic file (type jpg)
  <use Figure2.jpg>
-Package pdftex.def Info: Figure2.jpg used on input line 45.
+Package pdftex.def Info: Figure2.jpg used on input line 52.
 (pdftex.def)             Requested size: 284.52756pt x 89.4991pt.
 
-<Figure3.jpg, id=58, 402.75468pt x 67.0003pt>
+<Figure3.jpg, id=62, 402.75468pt x 67.0003pt>
 File: Figure3.jpg Graphic file (type jpg)
  <use Figure3.jpg>
-Package pdftex.def Info: Figure3.jpg used on input line 51.
+Package pdftex.def Info: Figure3.jpg used on input line 58.
 (pdftex.def)             Requested size: 284.52756pt x 47.33232pt.
 
-Overfull \hbox (2.19513pt too wide) in paragraph at lines 38--54
+Overfull \hbox (2.19513pt too wide) in paragraph at lines 45--61
 \OT1/cmr/m/n/10 for-mat file con-sist-ing string of de-scrip-tion, read and qua
 l-i-ty(only ex-ist-s in FASTQ
  []
 
 [3 <D:/course/note/survey/eng/Figure1.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 57.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 64.
 (d:\CTEX\MiKTeX\tex\latex\base\omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 57.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
  [4 <D:/course/note/survey/eng/Figure2.jpg> <D:/course/note/survey/eng/Figure3.
 jpg>]
-<Figure4.jpg, id=77, 660.96938pt x 188.20313pt>
+<Figure4.jpg, id=81, 660.96938pt x 188.20313pt>
 File: Figure4.jpg Graphic file (type jpg)
  <use Figure4.jpg>
-Package pdftex.def Info: Figure4.jpg used on input line 68.
+Package pdftex.def Info: Figure4.jpg used on input line 75.
 (pdftex.def)             Requested size: 284.52756pt x 81.01765pt.
- [5 <D:/course/note/survey/eng/Figure4.jpg>] <Figure5.jpg, id=88, 536.75531pt x
+ [5 <D:/course/note/survey/eng/Figure4.jpg>] <Figure5.jpg, id=92, 536.75531pt x
  349.305pt>
 File: Figure5.jpg Graphic file (type jpg)
 
 <use Figure5.jpg>
-Package pdftex.def Info: Figure5.jpg used on input line 83.
+Package pdftex.def Info: Figure5.jpg used on input line 90.
 (pdftex.def)             Requested size: 284.52756pt x 185.16273pt.
- <Figure6.jpg, id=89, 1224.07312pt x 409.53pt>
+ <Figure6.jpg, id=93, 1224.07312pt x 409.53pt>
 File: Figure6.jpg Graphic file (type jpg)
 
 <use Figure6.jpg>
-Package pdftex.def Info: Figure6.jpg used on input line 89.
+Package pdftex.def Info: Figure6.jpg used on input line 96.
 (pdftex.def)             Requested size: 284.52756pt x 95.18974pt.
 
-Overfull \hbox (45.13972pt too wide) in paragraph at lines 115--128
+Overfull \hbox (45.13972pt too wide) in paragraph at lines 122--135
  [] 
  []
 
 [6 <D:/course/note/survey/eng/Figure5.jpg>] [7 <D:/course/note/survey/eng/Figur
-e6.jpg>] <Figure7.jpg, id=126, 423.08063pt x 133.24782pt>
+e6.jpg>] <Figure7.jpg, id=130, 423.08063pt x 133.24782pt>
 File: Figure7.jpg Graphic file (type jpg)
  <use Figure7.jpg>
-Package pdftex.def Info: Figure7.jpg used on input line 141.
+Package pdftex.def Info: Figure7.jpg used on input line 148.
 (pdftex.def)             Requested size: 284.52756pt x 89.61307pt.
 
 [8]
-Overfull \hbox (4.30417pt too wide) in paragraph at lines 145--145
+Overfull \hbox (4.30417pt too wide) in paragraph at lines 152--152
 [][][]\OT1/cmr/m/n/8 http://sourceforge.net/apps/mediawiki/dnaa/index.php?title
 =Whole[]Genome[]Simulation| 
  []
 
 
-Overfull \hbox (4.8339pt too wide) in paragraph at lines 145--146
+Overfull \hbox (4.8339pt too wide) in paragraph at lines 152--153
 \OT1/cmr/m/n/10 search this database us-ing an ac-cess code be-gin with S-R-P(s
 tudies), SRS(samples),
  []
 
 [9 <D:/course/note/survey/eng/Figure7.jpg>]
-Overfull \hbox (90.47322pt too wide) in paragraph at lines 151--166
+Overfull \hbox (90.47322pt too wide) in paragraph at lines 158--173
  [] 
  []
 
-(D:\course\note\survey\eng\SequenceAssembly.bbl [10] [11])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
- [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
+
+Overfull \hbox (51.0176pt too wide) in paragraph at lines 176--177
+\OT1/cmr/m/n/10 some3.fasta sep-a-rate-ly at [][]ft-p://ftp.sanger.ac.uk/pub2/y
+east/pombe/Chromosome[]contigs/[][]. 
+ []
+
+[10]
+Overfull \hbox (3.00354pt too wide) in paragraph at lines 200--201
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+(D:\course\note\survey\eng\SequenceAssembly.bbl [11] [12])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
+ [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
 
 (D:\course\note\survey\eng\SequenceAssembly.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
 Package rerunfilecheck Info: File `SequenceAssembly.out' has not changed.
-(rerunfilecheck)             Checksum: ABC5C732F12E1C78C324CBE877A2CF20;392.
+(rerunfilecheck)             Checksum: B014829164C76D33C887D46210B58788;445.
  ) 
 Here is how much of TeX's memory you used:
- 4992 strings out of 495354
- 72938 string characters out of 3183858
- 158007 words of memory out of 3000000
- 8082 multiletter control sequences out of 15000+200000
+ 6585 strings out of 495354
+ 94810 string characters out of 3183858
+ 203052 words of memory out of 3000000
+ 9646 multiletter control sequences out of 15000+200000
  8233 words of font info for 29 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,9n,28p,3019b,422s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,9n,39p,3019b,888s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/CTEX/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmbx9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmmi10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/C
 TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/CTEX/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmr17.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r6.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/CTEX/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmr8.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmr9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/
-CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on SequenceAssembly.pdf (12 pages, 669249 bytes).
+r5.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><d:/CTEX/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr8.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/CT
+EX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/CTEX/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmti10.pfb>
+Output written on SequenceAssembly.pdf (13 pages, 686524 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
- 92 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 100 words of extra memory for PDF output out of 10000 (max. 10000000)
 
