@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  30 JAN 2013 16:27
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  30 JAN 2013 17:22
 entering extended mode
 **D:/course/note/survey/eng/SequenceAssembly.tex
 (D:/course/note/survey/eng/SequenceAssembly.tex
@@ -268,7 +268,7 @@ Overfull \hbox (3.83966pt too wide) in paragraph at lines 23--24
 r-ates large
  []
 
-<Figure1.jpg, id=44, 660.96938pt x 145.29282pt>
+<Figure1.jpg, id=48, 660.96938pt x 145.29282pt>
 File: Figure1.jpg Graphic file (type jpg)
  <use Figure1.jpg>
 Package pdftex.def Info: Figure1.jpg used on input line 33.
@@ -279,13 +279,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 38.
 
-<Figure2.jpg, id=61, 734.745pt x 231.11343pt>
+<Figure2.jpg, id=65, 734.745pt x 231.11343pt>
 File: Figure2.jpg Graphic file (type jpg)
  <use Figure2.jpg>
 Package pdftex.def Info: Figure2.jpg used on input line 52.
 (pdftex.def)             Requested size: 284.52756pt x 89.4991pt.
 
-<Figure3.jpg, id=62, 402.75468pt x 67.0003pt>
+<Figure3.jpg, id=66, 402.75468pt x 67.0003pt>
 File: Figure3.jpg Graphic file (type jpg)
  <use Figure3.jpg>
 Package pdftex.def Info: Figure3.jpg used on input line 58.
@@ -309,19 +309,19 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
  [4 <D:/course/note/survey/eng/Figure2.jpg> <D:/course/note/survey/eng/Figure3.
 jpg>]
-<Figure4.jpg, id=81, 660.96938pt x 188.20313pt>
+<Figure4.jpg, id=85, 660.96938pt x 188.20313pt>
 File: Figure4.jpg Graphic file (type jpg)
  <use Figure4.jpg>
 Package pdftex.def Info: Figure4.jpg used on input line 75.
 (pdftex.def)             Requested size: 284.52756pt x 81.01765pt.
- [5 <D:/course/note/survey/eng/Figure4.jpg>] <Figure5.jpg, id=92, 536.75531pt x
+ [5 <D:/course/note/survey/eng/Figure4.jpg>] <Figure5.jpg, id=96, 536.75531pt x
  349.305pt>
 File: Figure5.jpg Graphic file (type jpg)
 
 <use Figure5.jpg>
 Package pdftex.def Info: Figure5.jpg used on input line 90.
 (pdftex.def)             Requested size: 284.52756pt x 185.16273pt.
- <Figure6.jpg, id=93, 1224.07312pt x 409.53pt>
+ <Figure6.jpg, id=97, 1224.07312pt x 409.53pt>
 File: Figure6.jpg Graphic file (type jpg)
 
 <use Figure6.jpg>
@@ -333,7 +333,7 @@ Overfull \hbox (45.13972pt too wide) in paragraph at lines 122--135
  []
 
 [6 <D:/course/note/survey/eng/Figure5.jpg>] [7 <D:/course/note/survey/eng/Figur
-e6.jpg>] <Figure7.jpg, id=130, 423.08063pt x 133.24782pt>
+e6.jpg>] <Figure7.jpg, id=134, 423.08063pt x 133.24782pt>
 File: Figure7.jpg Graphic file (type jpg)
  <use Figure7.jpg>
 Package pdftex.def Info: Figure7.jpg used on input line 148.
@@ -361,25 +361,25 @@ Overfull \hbox (3.00354pt too wide) in paragraph at lines 200--201
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-(D:\course\note\survey\eng\SequenceAssembly.bbl [11] [12])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
+[11] (D:\course\note\survey\eng\SequenceAssembly.bbl [12])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 210.
  [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
 
 (D:\course\note\survey\eng\SequenceAssembly.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
 Package rerunfilecheck Info: File `SequenceAssembly.out' has not changed.
-(rerunfilecheck)             Checksum: B014829164C76D33C887D46210B58788;445.
+(rerunfilecheck)             Checksum: 1DBD2815C6B37A69735660C40D049012;491.
  ) 
 Here is how much of TeX's memory you used:
- 6585 strings out of 495354
- 94810 string characters out of 3183858
+ 6587 strings out of 495354
+ 94830 string characters out of 3183858
  203052 words of memory out of 3000000
- 9646 multiletter control sequences out of 15000+200000
+ 9647 multiletter control sequences out of 15000+200000
  8233 words of font info for 29 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,9n,39p,3299b,888s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,9n,39p,3153b,888s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/CTEX/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmbx9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmmi10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/C
@@ -390,9 +390,9 @@ fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmr8.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/CT
 EX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/CTEX/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmti10.pfb>
-Output written on SequenceAssembly.pdf (13 pages, 686981 bytes).
+Output written on SequenceAssembly.pdf (13 pages, 687599 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 100 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 273 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 108 words of extra memory for PDF output out of 10000 (max. 10000000)
 
