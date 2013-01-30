@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  18 JAN 2013 17:30
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.14)  30 JAN 2013 16:27
 entering extended mode
 **D:/course/note/survey/eng/SequenceAssembly.tex
 (D:/course/note/survey/eng/SequenceAssembly.tex
@@ -345,12 +345,6 @@ Overfull \hbox (4.30417pt too wide) in paragraph at lines 152--152
 =Whole[]Genome[]Simulation| 
  []
 
-
-Overfull \hbox (4.8339pt too wide) in paragraph at lines 152--153
-\OT1/cmr/m/n/10 search this database us-ing an ac-cess code be-gin with S-R-P(s
-tudies), SRS(samples),
- []
-
 [9 <D:/course/note/survey/eng/Figure7.jpg>]
 Overfull \hbox (90.47322pt too wide) in paragraph at lines 158--173
  [] 
@@ -385,7 +379,7 @@ Here is how much of TeX's memory you used:
  9646 multiletter control sequences out of 15000+200000
  8233 words of font info for 29 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,9n,39p,3019b,888s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,9n,39p,3299b,888s stack positions out of 5000i,500n,10000p,200000b,50000s
 <d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/CTEX/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmbx9.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmmi10.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/C
@@ -396,9 +390,9 @@ fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmr8.pfb><d:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><d:/CT
 EX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/CTEX/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmti10.pfb>
-Output written on SequenceAssembly.pdf (13 pages, 686524 bytes).
+Output written on SequenceAssembly.pdf (13 pages, 686981 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
+ 270 PDF objects out of 1000 (max. 8388607)
  68 named destinations out of 1000 (max. 500000)
  100 words of extra memory for PDF output out of 10000 (max. 10000000)
 
